@@ -1,0 +1,66 @@
+{
+  "age_group": "12+",
+  "subject": "literacy",
+  "questions": [
+    {
+      "id": "l12_001", "difficulty": 4,
+      "question": "What literary device is used in: 'The wind whispered through the trees'?",
+      "answers": ["Hyperbole", "Personification", "Onomatopoeia", "Simile"],
+      "correct": 1,
+      "explanation": "Personification gives human qualities to non-human things. Wind cannot actually whisper — that is a human action being given to the wind.",
+      "source": "BBC Bitesize KS3 English"
+    },
+    {
+      "id": "l12_002", "difficulty": 4,
+      "question": "In Shakespeare's plays, what is a soliloquy?",
+      "answers": [
+        "A conversation between two characters",
+        "A character speaking their thoughts aloud to the audience",
+        "A song sung by the chorus",
+        "A stage direction"
+      ],
+      "correct": 1,
+      "explanation": "A soliloquy is when a character speaks their private thoughts aloud on stage, as if alone. Hamlet's 'To be or not to be' is famous.",
+      "source": "BBC Bitesize KS3 English"
+    },
+    {
+      "id": "l12_003", "difficulty": 4,
+      "question": "What is the difference between a theme and a subject in literature?",
+      "answers": [
+        "They are the same thing",
+        "Subject is what a text is about; theme is the deeper message or idea",
+        "Theme is what a text is about; subject is the deeper message",
+        "Subject refers to characters; theme refers to setting"
+      ],
+      "correct": 1,
+      "explanation": "Subject = what happens (e.g. a war). Theme = the deeper idea explored (e.g. the futility of conflict, courage, loss).",
+      "source": "BBC Bitesize KS3 English"
+    },
+    {
+      "id": "l12_004", "difficulty": 5,
+      "question": "What is an 'unreliable narrator'?",
+      "answers": [
+        "A narrator who speaks too quietly",
+        "A narrator whose account of events cannot be fully trusted",
+        "A narrator who is not the main character",
+        "A narrator who forgets details"
+      ],
+      "correct": 1,
+      "explanation": "An unreliable narrator's version of events is biased, mistaken, or deliberately misleading. The reader must read between the lines.",
+      "source": "BBC Bitesize KS3 English"
+    },
+    {
+      "id": "l12_005", "difficulty": 5,
+      "question": "Which of these is written in iambic pentameter?",
+      "answers": [
+        "Roses are red, violets are blue",
+        "Shall I compare thee to a summer's day?",
+        "There once was a man from Nantucket",
+        "In the beginning God created the heavens"
+      ],
+      "correct": 1,
+      "explanation": "'Shall I com-PARE thee TO a SUM-mer's DAY?' — 10 syllables in 5 pairs (da-DUM), which is iambic pentameter. Shakespeare used it widely.",
+      "source": "BBC Bitesize KS3 English"
+    }
+  ]
+}

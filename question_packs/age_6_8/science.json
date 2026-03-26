@@ -1,0 +1,46 @@
+{
+  "age_group": "6-8",
+  "subject": "science",
+  "questions": [
+    {
+      "id": "s68_001", "difficulty": 2,
+      "question": "What do we call the process by which plants make their own food?",
+      "answers": ["Digestion", "Photosynthesis", "Respiration", "Evaporation"],
+      "correct": 1,
+      "explanation": "Photosynthesis! Plants use sunlight, water and air to make their own food. That is why they need sunlight.",
+      "source": "BBC Bitesize KS1 Science"
+    },
+    {
+      "id": "s68_002", "difficulty": 2,
+      "question": "Which of these is a source of light?",
+      "answers": ["Mirror", "Window", "The Sun", "A book"],
+      "correct": 2,
+      "explanation": "The Sun produces its own light — it is a light source. Mirrors and windows reflect or let light through but do not make it.",
+      "source": "BBC Bitesize KS1 Science"
+    },
+    {
+      "id": "s68_003", "difficulty": 2,
+      "question": "What are the three states of matter?",
+      "answers": ["Hot, Warm, Cold", "Solid, Liquid, Gas", "Rock, Water, Air", "Big, Small, Tiny"],
+      "correct": 1,
+      "explanation": "The three states of matter are Solid, Liquid and Gas. Water can be all three: ice (solid), water (liquid), steam (gas)!",
+      "source": "BBC Bitesize KS1 Science"
+    },
+    {
+      "id": "s68_004", "difficulty": 2,
+      "question": "What organ pumps blood around your body?",
+      "answers": ["Brain", "Lungs", "Heart", "Stomach"],
+      "correct": 2,
+      "explanation": "Your heart pumps blood all around your body. It beats about 70 times every minute!",
+      "source": "BBC Bitesize KS1 Science"
+    },
+    {
+      "id": "s68_005", "difficulty": 2,
+      "question": "Which force pulls objects towards the ground?",
+      "answers": ["Magnetism", "Friction", "Gravity", "Electricity"],
+      "correct": 2,
+      "explanation": "Gravity pulls everything towards the Earth. That is why things fall down when you drop them!",
+      "source": "BBC Bitesize KS1 Science"
+    }
+  ]
+}

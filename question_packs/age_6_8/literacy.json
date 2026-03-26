@@ -1,0 +1,46 @@
+{
+  "age_group": "6-8",
+  "subject": "literacy",
+  "questions": [
+    {
+      "id": "l68_001", "difficulty": 2,
+      "question": "Which word is a verb (doing word)?",
+      "answers": ["Happy", "Run", "Blue", "Table"],
+      "correct": 1,
+      "explanation": "Run is a verb — it describes an action you do. Happy is an adjective, Blue is a colour, Table is a noun.",
+      "source": "BBC Bitesize KS1 English"
+    },
+    {
+      "id": "l68_002", "difficulty": 2,
+      "question": "What punctuation mark goes at the end of a question?",
+      "answers": ["Full stop", "Comma", "Question mark", "Exclamation mark"],
+      "correct": 2,
+      "explanation": "A question mark (?) goes at the end of a question. Like this one!",
+      "source": "BBC Bitesize KS1 English"
+    },
+    {
+      "id": "l68_003", "difficulty": 2,
+      "question": "Which word is the odd one out? Cat, Dog, Run, Fish",
+      "answers": ["Cat", "Dog", "Run", "Fish"],
+      "correct": 2,
+      "explanation": "Run is the odd one out — it is a verb (doing word). Cat, Dog and Fish are all nouns (naming words for animals).",
+      "source": "BBC Bitesize KS1 English"
+    },
+    {
+      "id": "l68_004", "difficulty": 2,
+      "question": "What is the plural of 'child'?",
+      "answers": ["Childs", "Childes", "Children", "Childer"],
+      "correct": 2,
+      "explanation": "The plural of child is children. Some words change their spelling to make a plural instead of just adding 's'.",
+      "source": "BBC Bitesize KS1 English"
+    },
+    {
+      "id": "l68_005", "difficulty": 2,
+      "question": "Which sentence uses a capital letter correctly?",
+      "answers": ["my name is sam.", "My name is sam.", "My Name Is Sam.", "My name is Sam."],
+      "correct": 3,
+      "explanation": "My name is Sam. — The start of a sentence and names (proper nouns) get capital letters.",
+      "source": "BBC Bitesize KS1 English"
+    }
+  ]
+}

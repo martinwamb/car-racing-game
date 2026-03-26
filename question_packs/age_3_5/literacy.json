@@ -1,0 +1,46 @@
+{
+  "age_group": "3-5",
+  "subject": "literacy",
+  "questions": [
+    {
+      "id": "l35_001", "difficulty": 1,
+      "question": "Which letter does 'Apple' start with?",
+      "answers": ["B", "A", "C", "D"],
+      "correct": 1,
+      "explanation": "Apple starts with the letter A! A is for Apple.",
+      "source": "BBC Bitesize Early Years"
+    },
+    {
+      "id": "l35_002", "difficulty": 1,
+      "question": "Which of these is an animal?",
+      "answers": ["Chair", "Apple", "Cat", "Shoe"],
+      "correct": 2,
+      "explanation": "A cat is an animal! Animals are living things that can move and eat.",
+      "source": "BBC Bitesize Early Years"
+    },
+    {
+      "id": "l35_003", "difficulty": 1,
+      "question": "What sound does the letter 'S' make?",
+      "answers": ["Buh", "Tuh", "Sss", "Muh"],
+      "correct": 2,
+      "explanation": "S makes the 'sss' sound — like a snake! S is for Snake.",
+      "source": "BBC Bitesize Early Years Phonics"
+    },
+    {
+      "id": "l35_004", "difficulty": 1,
+      "question": "How many words are in this sentence: 'I like cats'?",
+      "answers": ["2", "4", "3", "1"],
+      "correct": 2,
+      "explanation": "'I like cats' has 3 words: I, like, cats. Count the spaces between words!",
+      "source": "BBC Bitesize Early Years"
+    },
+    {
+      "id": "l35_005", "difficulty": 1,
+      "question": "Which word rhymes with 'cat'?",
+      "answers": ["Dog", "Hat", "Sun", "Big"],
+      "correct": 1,
+      "explanation": "Cat and Hat rhyme — they both end in the sound 'at'!",
+      "source": "BBC Bitesize Early Years Phonics"
+    }
+  ]
+}

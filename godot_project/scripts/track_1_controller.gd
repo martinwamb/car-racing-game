@@ -13,8 +13,8 @@ extends Node2D
 var _last_finish_side: int = 0   # track which side of finish line car is on
 
 func _ready() -> void:
-	# Load questions for the player's age group (math to start)
-	QuestionMgr.load_pack(AgeProfile.age_group if AgeProfile.age_group != "" else "6-8", "math")
+	# Load all subjects for the player's age group (math + literacy + science)
+	QuestionMgr.load_all_packs(AgeProfile.age_group if AgeProfile.age_group != "" else "6-8")
 
 	# Wire question zones
 	for zone in question_zones.get_children():
@@ -39,7 +39,7 @@ func _ready() -> void:
 func _on_question_zone_entered(body: Node, zone: Node2D) -> void:
 	if body != player_car:
 		return
-	var question = QuestionMgr.get_random_question()
+	var question = QuestionMgr.get_random_from_all()
 	if question.is_empty():
 		return
 	# Disable zone so it doesn't re-trigger mid-answer

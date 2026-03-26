@@ -1,0 +1,46 @@
+{
+  "age_group": "12+",
+  "subject": "science",
+  "questions": [
+    {
+      "id": "s12_001", "difficulty": 4,
+      "question": "What is Newton's Second Law of Motion?",
+      "answers": ["F = mv", "F = ma", "E = mc²", "v = u + at"],
+      "correct": 1,
+      "explanation": "F = ma — Force equals mass times acceleration. Double the mass or acceleration and you double the force needed.",
+      "source": "BBC Bitesize KS3 Physics"
+    },
+    {
+      "id": "s12_002", "difficulty": 4,
+      "question": "What particle has a negative charge in an atom?",
+      "answers": ["Proton", "Neutron", "Electron", "Nucleus"],
+      "correct": 2,
+      "explanation": "Electrons are negatively charged and orbit the nucleus. Protons are positive; neutrons have no charge.",
+      "source": "BBC Bitesize KS3 Chemistry"
+    },
+    {
+      "id": "s12_003", "difficulty": 4,
+      "question": "What is the process by which cells divide to produce identical copies?",
+      "answers": ["Meiosis", "Osmosis", "Mitosis", "Diffusion"],
+      "correct": 2,
+      "explanation": "Mitosis produces two identical daughter cells. Meiosis produces four genetically unique cells for reproduction.",
+      "source": "BBC Bitesize KS3 Biology"
+    },
+    {
+      "id": "s12_004", "difficulty": 5,
+      "question": "What is the pH of a neutral solution?",
+      "answers": ["0", "14", "7", "1"],
+      "correct": 2,
+      "explanation": "pH 7 is neutral (like pure water). Below 7 is acidic, above 7 is alkaline. pH 0 is extremely acidic, pH 14 extremely alkaline.",
+      "source": "BBC Bitesize KS3 Chemistry"
+    },
+    {
+      "id": "s12_005", "difficulty": 5,
+      "question": "Which gas do plants absorb during photosynthesis and release during respiration?",
+      "answers": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+      "correct": 2,
+      "explanation": "Plants absorb CO₂ for photosynthesis and release it during respiration. They also absorb O₂ during respiration and release it during photosynthesis.",
+      "source": "BBC Bitesize KS3 Biology"
+    }
+  ]
+}

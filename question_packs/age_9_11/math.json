@@ -1,0 +1,54 @@
+{
+  "age_group": "9-11",
+  "subject": "math",
+  "questions": [
+    {
+      "id": "m911_001", "difficulty": 3,
+      "question": "What is 7 × 8?",
+      "answers": ["54", "63", "56", "48"],
+      "correct": 2,
+      "explanation": "7 × 8 = 56. A trick: 5, 6, 7, 8 → 56 = 7 × 8!",
+      "source": "BBC Bitesize KS2 Maths"
+    },
+    {
+      "id": "m911_002", "difficulty": 3,
+      "question": "What is 25% of 80?",
+      "answers": ["20", "25", "40", "15"],
+      "correct": 0,
+      "explanation": "25% means one quarter. 80 ÷ 4 = 20.",
+      "source": "BBC Bitesize KS2 Maths"
+    },
+    {
+      "id": "m911_003", "difficulty": 3,
+      "question": "What is the area of a rectangle 6cm wide and 4cm tall?",
+      "answers": ["20 cm²", "24 cm²", "10 cm²", "18 cm²"],
+      "correct": 1,
+      "explanation": "Area = width × height = 6 × 4 = 24 cm².",
+      "source": "BBC Bitesize KS2 Maths"
+    },
+    {
+      "id": "m911_004", "difficulty": 3,
+      "question": "What is 3/4 as a decimal?",
+      "answers": ["0.34", "0.3", "0.75", "0.43"],
+      "correct": 2,
+      "explanation": "3 ÷ 4 = 0.75. Three quarters is seventy-five hundredths.",
+      "source": "BBC Bitesize KS2 Maths"
+    },
+    {
+      "id": "m911_005", "difficulty": 3,
+      "question": "What is the next prime number after 7?",
+      "answers": ["8", "9", "10", "11"],
+      "correct": 3,
+      "explanation": "11 is the next prime. A prime number is only divisible by 1 and itself. 8=2×4, 9=3×3, 10=2×5, but 11 has no factors!",
+      "source": "BBC Bitesize KS2 Maths"
+    },
+    {
+      "id": "m911_006", "difficulty": 4,
+      "question": "If a car travels 60 km/h for 2.5 hours, how far does it travel?",
+      "answers": ["120 km", "150 km", "125 km", "100 km"],
+      "correct": 1,
+      "explanation": "Distance = speed × time = 60 × 2.5 = 150 km.",
+      "source": "BBC Bitesize KS2 Maths"
+    }
+  ]
+}

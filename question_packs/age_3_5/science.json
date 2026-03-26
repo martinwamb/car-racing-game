@@ -1,0 +1,46 @@
+{
+  "age_group": "3-5",
+  "subject": "science",
+  "questions": [
+    {
+      "id": "s35_001", "difficulty": 1,
+      "question": "What do plants need to grow?",
+      "answers": ["Toys", "Sunlight and water", "Music", "Paint"],
+      "correct": 1,
+      "explanation": "Plants need sunlight and water to grow. That is why we water plants and put them near windows!",
+      "source": "BBC Bitesize Early Years Science"
+    },
+    {
+      "id": "s35_002", "difficulty": 1,
+      "question": "What is the colour of the sky on a sunny day?",
+      "answers": ["Green", "Red", "Blue", "Purple"],
+      "correct": 2,
+      "explanation": "The sky looks blue on a sunny day because of the way sunlight travels through the air.",
+      "source": "BBC Bitesize Early Years Science"
+    },
+    {
+      "id": "s35_003", "difficulty": 1,
+      "question": "Which animal lays eggs?",
+      "answers": ["Dog", "Cat", "Bird", "Rabbit"],
+      "correct": 2,
+      "explanation": "Birds lay eggs! Baby birds hatch out of eggs.",
+      "source": "BBC Bitesize Early Years Science"
+    },
+    {
+      "id": "s35_004", "difficulty": 1,
+      "question": "What do we call frozen water?",
+      "answers": ["Steam", "Rain", "Ice", "Mud"],
+      "correct": 2,
+      "explanation": "When water gets very cold it freezes and becomes ice!",
+      "source": "BBC Bitesize Early Years Science"
+    },
+    {
+      "id": "s35_005", "difficulty": 1,
+      "question": "How many legs does a spider have?",
+      "answers": ["4", "6", "8", "2"],
+      "correct": 2,
+      "explanation": "Spiders have 8 legs! That is two more than insects, which have 6.",
+      "source": "BBC Bitesize Early Years Science"
+    }
+  ]
+}

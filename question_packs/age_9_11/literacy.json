@@ -1,0 +1,61 @@
+{
+  "age_group": "9-11",
+  "subject": "literacy",
+  "questions": [
+    {
+      "id": "l911_001", "difficulty": 3,
+      "question": "What is a metaphor?",
+      "answers": [
+        "A word that sounds like its meaning",
+        "Saying something IS something else to make a comparison",
+        "A comparison using 'like' or 'as'",
+        "A word opposite in meaning"
+      ],
+      "correct": 1,
+      "explanation": "A metaphor says something IS something else: 'The classroom was a zoo.' A simile uses 'like' or 'as': 'as busy as a zoo'.",
+      "source": "BBC Bitesize KS2 English"
+    },
+    {
+      "id": "l911_002", "difficulty": 3,
+      "question": "Which sentence is written in the past tense?",
+      "answers": [
+        "She runs to school every day.",
+        "She will run to school tomorrow.",
+        "She ran to school this morning.",
+        "She is running to school now."
+      ],
+      "correct": 2,
+      "explanation": "'She ran' uses the past tense — it happened before now. 'Ran' is the past tense of 'run'.",
+      "source": "BBC Bitesize KS2 English"
+    },
+    {
+      "id": "l911_003", "difficulty": 3,
+      "question": "What does the prefix 'un-' mean in the word 'unhappy'?",
+      "answers": ["Very", "Almost", "Not", "Again"],
+      "correct": 2,
+      "explanation": "The prefix 'un-' means NOT. Unhappy = not happy. Other examples: undo, unfair, unusual.",
+      "source": "BBC Bitesize KS2 English"
+    },
+    {
+      "id": "l911_004", "difficulty": 3,
+      "question": "What is an antonym?",
+      "answers": ["A word with a similar meaning", "A word with an opposite meaning", "A word that rhymes", "A made-up word"],
+      "correct": 1,
+      "explanation": "An antonym is a word with the opposite meaning. Hot/Cold, Fast/Slow, Happy/Sad are antonyms.",
+      "source": "BBC Bitesize KS2 English"
+    },
+    {
+      "id": "l911_005", "difficulty": 4,
+      "question": "Which of these is an example of alliteration?",
+      "answers": [
+        "The cat sat on the mat",
+        "Peter Piper picked a peck of peppers",
+        "She sells seashells... and fish",
+        "Round and round the rugged rock"
+      ],
+      "correct": 1,
+      "explanation": "Alliteration is when words near each other start with the same sound. 'Peter Piper picked' — all start with the 'P' sound!",
+      "source": "BBC Bitesize KS2 English"
+    }
+  ]
+}

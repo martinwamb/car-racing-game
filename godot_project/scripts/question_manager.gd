@@ -9,8 +9,16 @@ const LOCAL_PACK_PATH = "res://question_packs/"
 signal questions_loaded(questions: Array)
 signal question_load_failed(reason: String)
 
+const SUBJECTS = ["math", "literacy", "science"]
+
 var _loaded_questions: Array = []
 var _used_indices: Array = []
+var _all_questions: Array = []   # merged pool from all subjects
+
+func load_all_packs(age_group: String) -> void:
+	_all_questions.clear()
+	for subject in SUBJECTS:
+		load_pack(age_group, subject)
 
 func load_pack(age_group: String, subject: String) -> void:
 	# Normalise age group to folder name e.g. "6-8" -> "age_6_8"
@@ -56,8 +64,14 @@ func _on_remote_loaded(result: int, _code: int, _headers, body: PackedByteArray,
 
 func _store_questions(questions: Array) -> void:
 	_loaded_questions = questions
+	_all_questions.append_array(questions)
 	_used_indices.clear()
 	questions_loaded.emit(questions)
+
+func get_random_from_all() -> Dictionary:
+	if _all_questions.is_empty():
+		return get_random_question()
+	return _all_questions[randi() % _all_questions.size()]
 
 func get_random_question() -> Dictionary:
 	if _loaded_questions.is_empty():

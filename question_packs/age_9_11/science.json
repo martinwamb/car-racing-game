@@ -1,0 +1,51 @@
+{
+  "age_group": "9-11",
+  "subject": "science",
+  "questions": [
+    {
+      "id": "s911_001", "difficulty": 3,
+      "question": "What is the chemical symbol for water?",
+      "answers": ["WA", "H2O", "HO2", "W2O"],
+      "correct": 1,
+      "explanation": "Water is H2O — two hydrogen atoms bonded to one oxygen atom.",
+      "source": "BBC Bitesize KS2 Science"
+    },
+    {
+      "id": "s911_002", "difficulty": 3,
+      "question": "What is the closest planet to the Sun?",
+      "answers": ["Venus", "Earth", "Mercury", "Mars"],
+      "correct": 2,
+      "explanation": "Mercury is the closest planet to the Sun. The order is: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.",
+      "source": "BBC Bitesize KS2 Science"
+    },
+    {
+      "id": "s911_003", "difficulty": 3,
+      "question": "What does a plant use to make food during photosynthesis?",
+      "answers": [
+        "Oxygen, soil and moonlight",
+        "Carbon dioxide, water and sunlight",
+        "Nitrogen, rain and starlight",
+        "Hydrogen, mud and heat"
+      ],
+      "correct": 1,
+      "explanation": "Plants take in carbon dioxide from air + water from roots + sunlight energy to make glucose (food) and release oxygen.",
+      "source": "BBC Bitesize KS2 Science"
+    },
+    {
+      "id": "s911_004", "difficulty": 3,
+      "question": "Which type of rock is formed from cooled magma or lava?",
+      "answers": ["Sedimentary", "Metamorphic", "Igneous", "Limestone"],
+      "correct": 2,
+      "explanation": "Igneous rock forms when magma (underground) or lava (above ground) cools and hardens. Granite and basalt are igneous rocks.",
+      "source": "BBC Bitesize KS2 Science"
+    },
+    {
+      "id": "s911_005", "difficulty": 4,
+      "question": "What is the unit of electrical resistance?",
+      "answers": ["Volt", "Ampere", "Watt", "Ohm"],
+      "correct": 3,
+      "explanation": "Electrical resistance is measured in Ohms (Ω), named after Georg Ohm. Ohm's Law: V = I × R.",
+      "source": "BBC Bitesize KS2 Science"
+    }
+  ]
+}

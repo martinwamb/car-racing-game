@@ -1,0 +1,46 @@
+{
+  "age_group": "12+",
+  "subject": "math",
+  "questions": [
+    {
+      "id": "m12_001", "difficulty": 4,
+      "question": "Solve for x: 2x + 6 = 18",
+      "answers": ["x = 8", "x = 6", "x = 12", "x = 4"],
+      "correct": 1,
+      "explanation": "2x + 6 = 18 → 2x = 12 → x = 6. Subtract 6 from both sides, then divide by 2.",
+      "source": "BBC Bitesize KS3 Maths"
+    },
+    {
+      "id": "m12_002", "difficulty": 4,
+      "question": "What is the Pythagorean theorem?",
+      "answers": ["a + b = c", "a² + b² = c²", "a × b = c²", "2a + 2b = c"],
+      "correct": 1,
+      "explanation": "a² + b² = c² — in a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.",
+      "source": "BBC Bitesize KS3 Maths"
+    },
+    {
+      "id": "m12_003", "difficulty": 4,
+      "question": "What is the probability of rolling a 6 on a fair die?",
+      "answers": ["1/3", "1/4", "1/6", "1/2"],
+      "correct": 2,
+      "explanation": "A die has 6 equal outcomes. Only one is a 6, so probability = 1/6 ≈ 16.7%.",
+      "source": "BBC Bitesize KS3 Maths"
+    },
+    {
+      "id": "m12_004", "difficulty": 5,
+      "question": "What is the gradient of the line y = 3x - 5?",
+      "answers": ["-5", "3", "1/3", "x"],
+      "correct": 1,
+      "explanation": "In y = mx + c, m is the gradient. Here m = 3. The y-intercept is c = -5.",
+      "source": "BBC Bitesize KS3 Maths"
+    },
+    {
+      "id": "m12_005", "difficulty": 5,
+      "question": "Simplify: 4x² × 3x³",
+      "answers": ["12x⁵", "7x⁶", "12x⁶", "7x⁵"],
+      "correct": 0,
+      "explanation": "Multiply coefficients: 4 × 3 = 12. Add exponents (same base): x² × x³ = x⁵. Answer: 12x⁵.",
+      "source": "BBC Bitesize KS3 Maths"
+    }
+  ]
+}
