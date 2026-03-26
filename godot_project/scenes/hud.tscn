@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_hud"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="TopBar" type="PanelContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -320.0
+offset_right = 320.0
+offset_bottom = 56.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TopBar"]
+layout_mode = 2
+
+[node name="CoinsIcon" type="Label" parent="TopBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "🪙"
+add_theme_font_size_override = "font_size"
+theme_override_font_sizes/font_size = 24
+
+[node name="CoinsLabel" type="Label" parent="TopBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0"
+add_theme_font_size_override = "font_size"
+theme_override_font_sizes/font_size = 22
+
+[node name="Spacer" type="Control" parent="TopBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TimerLabel" type="Label" parent="TopBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "2:00"
+add_theme_font_size_override = "font_size"
+theme_override_font_sizes/font_size = 22
+
+[node name="Spacer2" type="Control" parent="TopBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LapLabel" type="Label" parent="TopBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Lap 0/3"
+add_theme_font_size_override = "font_size"
+theme_override_font_sizes/font_size = 22
+
+; Coin pop animation — floats up and fades when coins are earned
+[node name="CoinPopup" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -60.0
+offset_top = 60.0
+offset_right = 60.0
+offset_bottom = 90.0
+text = "+20 coins!"
+modulate = Color(1, 0.84, 0, 0)
+horizontal_alignment = 1
+add_theme_font_size_override = "font_size"
+theme_override_font_sizes/font_size = 20

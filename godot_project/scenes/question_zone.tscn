@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(80, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2"]
+size = Vector2(80, 6)
+
+; A question zone is placed on the track. When the player drives over it,
+; the race pauses and a question pops up. Correct answers earn coins.
+; Inspired by Dust Racing 2D's checkpoint/trigger system.
+
+[node name="QuestionZone" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1")
+
+[node name="Visual" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-40, -10, 40, -10, 40, 10, -40, 10)
+color = Color(0.98, 0.75, 0.1, 0.85)
+
+[node name="Icon" type="Label" parent="."]
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 12.0
+offset_bottom = 12.0
+text = "?"
+horizontal_alignment = 1
+vertical_alignment = 1
+add_theme_font_size_override = "font_size"
+theme_override_font_sizes/font_size = 18
+
+[node name="AlreadyUsed" type="CollisionShape2D" parent="."]
+disabled = true
+shape = SubResource("RectangleShape2D_2")

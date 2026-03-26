@@ -1,0 +1,104 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_menu"]
+
+[node name="MainMenu" type="Control"]
+script = ExtResource("1_menu")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.102, 0.102, 0.18, 1)
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -260.0
+offset_right = 200.0
+offset_bottom = 260.0
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="VBox"]
+layout_mode = 2
+text = "Rev & Learn"
+horizontal_alignment = 1
+add_theme_font_size_override = "font_size"
+theme_override_font_sizes/font_size = 48
+
+[node name="Subtitle" type="Label" parent="VBox"]
+layout_mode = 2
+text = "Race. Answer. Upgrade."
+horizontal_alignment = 1
+modulate = Color(0.7, 0.7, 0.7, 1)
+
+[node name="Coins" type="Label" parent="VBox"]
+layout_mode = 2
+text = "🪙 0 coins"
+horizontal_alignment = 1
+add_theme_font_size_override = "font_size"
+theme_override_font_sizes/font_size = 20
+
+; ── Age group selection (shown only on first run) ────────────────────────────
+[node name="AgePanel" type="PanelContainer" parent="VBox"]
+layout_mode = 2
+visible = true
+
+[node name="AgeVBox" type="VBoxContainer" parent="VBox/AgePanel"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="AgeTitle" type="Label" parent="VBox/AgePanel/AgeVBox"]
+layout_mode = 2
+text = "How old are you?"
+horizontal_alignment = 1
+
+[node name="AgeButtons" type="HBoxContainer" parent="VBox/AgePanel/AgeVBox"]
+layout_mode = 2
+alignment = 1
+
+[node name="Age35" type="Button" parent="VBox/AgePanel/AgeVBox/AgeButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(80, 44)
+text = "3 – 5"
+
+[node name="Age68" type="Button" parent="VBox/AgePanel/AgeVBox/AgeButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(80, 44)
+text = "6 – 8"
+
+[node name="Age911" type="Button" parent="VBox/AgePanel/AgeVBox/AgeButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(80, 44)
+text = "9 – 11"
+
+[node name="Age12" type="Button" parent="VBox/AgePanel/AgeVBox/AgeButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(80, 44)
+text = "12 +"
+
+; ── Main buttons ─────────────────────────────────────────────────────────────
+[node name="PlayBtn" type="Button" parent="VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 56)
+text = "▶  PLAY"
+add_theme_font_size_override = "font_size"
+theme_override_font_sizes/font_size = 26
+disabled = true
+
+[node name="ShopBtn" type="Button" parent="VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 44)
+text = "🛒  Upgrade Shop"
+
+[node name="ChangeAgeBtn" type="Button" parent="VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 36)
+text = "Change Age Group"

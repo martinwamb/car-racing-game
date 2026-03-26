@@ -1,0 +1,123 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/player_car.tscn" id="1_car"]
+[ext_resource type="PackedScene" path="res://scenes/question_zone.tscn" id="2_qzone"]
+[ext_resource type="PackedScene" path="res://scenes/question_popup.tscn" id="3_qpopup"]
+[ext_resource type="PackedScene" path="res://scenes/hud.tscn" id="4_hud"]
+[ext_resource type="Script" path="res://scripts/track_manager.gd" id="5_tmgr"]
+[ext_resource type="Script" path="res://scripts/track_1_controller.gd" id="6_ctrl"]
+
+; ── Track layout: oval circuit, inspired by Dust Racing 2D tile approach ──
+; Road is built from StaticBody2D walls (inner + outer boundary) around an oval.
+; Track width: 120px. Outer oval: 900×580. Inner oval: 660×340.
+; Three question zones placed on straights and one on each long corner.
+
+[sub_resource type="RectangleShape2D" id="wall_top_out"]
+size = Vector2(900, 20)
+
+[sub_resource type="RectangleShape2D" id="wall_bot_out"]
+size = Vector2(900, 20)
+
+[sub_resource type="RectangleShape2D" id="wall_top_in"]
+size = Vector2(660, 20)
+
+[sub_resource type="RectangleShape2D" id="wall_bot_in"]
+size = Vector2(660, 20)
+
+[node name="Track1" type="Node2D"]
+script = ExtResource("6_ctrl")
+
+; ── Background ──────────────────────────────────────────────────────────────
+[node name="Background" type="ColorRect" parent="."]
+offset_left = -800.0
+offset_top = -600.0
+offset_right = 800.0
+offset_bottom = 600.0
+color = Color(0.18, 0.45, 0.18, 1)
+
+; ── Road surface (drawn as a wide oval using Polygon2D outer - inner) ───────
+[node name="RoadOuter" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(
+  -450,-290, -350,-380, 0,-420, 350,-380, 450,-290,
+   450,290, 350,380, 0,420, -350,380, -450,290)
+color = Color(0.28, 0.28, 0.28, 1)
+
+[node name="RoadInner" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(
+  -330,-170, -250,-240, 0,-280, 250,-240, 330,-170,
+   330,170, 250,240, 0,280, -250,240, -330,170)
+color = Color(0.18, 0.45, 0.18, 1)
+
+; ── Finish line ─────────────────────────────────────────────────────────────
+[node name="FinishLine" type="Polygon2D" parent="."]
+position = Vector2(-450, 0)
+polygon = PackedVector2Array(0,-60, 12,-60, 12,60, 0,60)
+color = Color(1, 1, 1, 1)
+
+[node name="FinishLineStripes" type="Polygon2D" parent="."]
+position = Vector2(-450, 0)
+polygon = PackedVector2Array(0,-60, 6,-60, 6,0, 0,0)
+color = Color(0, 0, 0, 1)
+
+; ── Track walls (physics) ────────────────────────────────────────────────────
+[node name="Walls" type="Node2D" parent="."]
+
+[node name="WallTopOuter" type="StaticBody2D" parent="Walls"]
+position = Vector2(0, -425)
+[node name="Col" type="CollisionShape2D" parent="Walls/WallTopOuter"]
+shape = SubResource("wall_top_out")
+
+[node name="WallBotOuter" type="StaticBody2D" parent="Walls"]
+position = Vector2(0, 425)
+[node name="Col" type="CollisionShape2D" parent="Walls/WallBotOuter"]
+shape = SubResource("wall_bot_out")
+
+[node name="WallTopInner" type="StaticBody2D" parent="Walls"]
+position = Vector2(0, -285)
+[node name="Col" type="CollisionShape2D" parent="Walls/WallTopInner"]
+shape = SubResource("wall_top_in")
+
+[node name="WallBotInner" type="StaticBody2D" parent="Walls"]
+position = Vector2(0, 285)
+[node name="Col" type="CollisionShape2D" parent="Walls/WallBotInner"]
+shape = SubResource("wall_bot_in")
+
+; ── Finish line trigger ──────────────────────────────────────────────────────
+[node name="FinishTrigger" type="Area2D" parent="."]
+position = Vector2(-450, 0)
+[node name="Col" type="CollisionShape2D" parent="FinishTrigger"]
+shape = SubResource("wall_top_out")
+
+; ── Waypoints for AI (Dust Racing 2D style waypoint path) ───────────────────
+[node name="AIPath" type="Path2D" parent="."]
+curve = Curve2D(Vector2(-390,0), Vector2(-390,-200), Vector2(0,-350),
+               Vector2(390,-200), Vector2(390,0), Vector2(390,200),
+               Vector2(0,350), Vector2(-390,200), Vector2(-390,0))
+
+; ── Question zones (3 per lap) ───────────────────────────────────────────────
+[node name="QuestionZones" type="Node2D" parent="."]
+
+[node name="Zone1" parent="QuestionZones" instance=ExtResource("2_qzone")]
+position = Vector2(0, -350)
+
+[node name="Zone2" parent="QuestionZones" instance=ExtResource("2_qzone")]
+position = Vector2(390, 0)
+rotation_degrees = 90
+
+[node name="Zone3" parent="QuestionZones" instance=ExtResource("2_qzone")]
+position = Vector2(0, 350)
+
+; ── Player spawn ─────────────────────────────────────────────────────────────
+[node name="PlayerCar" parent="." instance=ExtResource("1_car")]
+position = Vector2(-420, -40)
+rotation_degrees = -90
+
+; ── UI layers ─────────────────────────────────────────────────────────────────
+[node name="QuestionPopup" parent="." instance=ExtResource("3_qpopup")]
+[node name="HUD" parent="." instance=ExtResource("4_hud")]
+
+; ── Track manager ─────────────────────────────────────────────────────────────
+[node name="TrackManager" type="Node" parent="."]
+script = ExtResource("5_tmgr")
+race_duration = 120.0
+laps_to_complete = 3
