@@ -1,0 +1,62 @@
+name: Build Android AAB
+
+on:
+  push:
+    tags:
+      - 'v*'       # triggers on version tags like v0.1.0, v1.0.0
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Godot 4.3
+        run: |
+          wget -q https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
+          unzip -q Godot_v4.3-stable_linux.x86_64.zip
+          mv Godot_v4.3-stable_linux.x86_64 /usr/local/bin/godot
+          chmod +x /usr/local/bin/godot
+
+      - name: Install Godot export templates
+        run: |
+          mkdir -p ~/.local/share/godot/export_templates/4.3.stable
+          wget -q https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_export_templates.tpz
+          unzip -q Godot_v4.3-stable_export_templates.tpz -d /tmp/templates
+          mv /tmp/templates/templates/* ~/.local/share/godot/export_templates/4.3.stable/
+
+      - name: Decode keystore
+        run: |
+          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > godot_project/rev-and-learn.keystore
+
+      - name: Configure Android export
+        run: |
+          mkdir -p godot_project/export_presets.cfg
+          # export_presets.cfg is committed to the repo (without secrets)
+          # Inject keystore password via env so it never touches disk as plaintext
+        env:
+          KEYSTORE_PASS: ${{ secrets.ANDROID_KEYSTORE_PASS }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASS: ${{ secrets.ANDROID_KEY_PASS }}
+
+      - name: Build AAB
+        run: |
+          mkdir -p build/android
+          cd godot_project
+          godot --headless --export-release "Android" ../build/android/rev-and-learn.aab
+
+      - name: Upload AAB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rev-and-learn-${{ github.ref_name }}.aab
+          path: build/android/rev-and-learn.aab
+          retention-days: 30

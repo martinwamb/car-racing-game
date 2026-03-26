@@ -1,0 +1,51 @@
+{
+  "age_group": "3-5",
+  "subject": "math",
+  "questions": [
+    {
+      "id": "m35_001",
+      "difficulty": 1,
+      "question": "How many wheels does a car have?",
+      "answers": ["2", "4", "3", "6"],
+      "correct": 1,
+      "explanation": "A car has 4 wheels — one on each corner!",
+      "source": "BBC Bitesize Early Years"
+    },
+    {
+      "id": "m35_002",
+      "difficulty": 1,
+      "question": "Count the apples: 🍎🍎🍎 — How many?",
+      "answers": ["1", "4", "3", "2"],
+      "correct": 2,
+      "explanation": "There are 3 apples. Well done counting!",
+      "source": "BBC Bitesize Early Years"
+    },
+    {
+      "id": "m35_003",
+      "difficulty": 1,
+      "question": "What comes after 4?",
+      "answers": ["3", "6", "5", "7"],
+      "correct": 2,
+      "explanation": "We count: 1, 2, 3, 4, 5! Five comes after four.",
+      "source": "BBC Bitesize Early Years"
+    },
+    {
+      "id": "m35_004",
+      "difficulty": 1,
+      "question": "Which number is bigger: 3 or 7?",
+      "answers": ["3", "They are the same", "7", "I don't know"],
+      "correct": 2,
+      "explanation": "7 is bigger than 3! The higher we count, the bigger the number.",
+      "source": "BBC Bitesize Early Years"
+    },
+    {
+      "id": "m35_005",
+      "difficulty": 1,
+      "question": "How many fingers on one hand?",
+      "answers": ["4", "6", "3", "5"],
+      "correct": 3,
+      "explanation": "One hand has 5 fingers. Hold up your hand and count them!",
+      "source": "BBC Bitesize Early Years"
+    }
+  ]
+}

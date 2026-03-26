@@ -1,0 +1,51 @@
+{
+  "age_group": "6-8",
+  "subject": "math",
+  "questions": [
+    {
+      "id": "m68_001",
+      "difficulty": 2,
+      "question": "What is 5 + 3?",
+      "answers": ["6", "8", "7", "9"],
+      "correct": 1,
+      "explanation": "5 + 3 = 8. Count on from 5: six, seven, eight!",
+      "source": "BBC Bitesize KS1 Maths"
+    },
+    {
+      "id": "m68_002",
+      "difficulty": 2,
+      "question": "What is 10 - 4?",
+      "answers": ["5", "7", "6", "8"],
+      "correct": 2,
+      "explanation": "10 - 4 = 6. Take away 4 from 10!",
+      "source": "BBC Bitesize KS1 Maths"
+    },
+    {
+      "id": "m68_003",
+      "difficulty": 2,
+      "question": "How many sides does a triangle have?",
+      "answers": ["4", "2", "3", "5"],
+      "correct": 2,
+      "explanation": "A triangle has 3 sides and 3 corners!",
+      "source": "BBC Bitesize KS1 Maths"
+    },
+    {
+      "id": "m68_004",
+      "difficulty": 2,
+      "question": "What is 3 × 2?",
+      "answers": ["5", "8", "6", "4"],
+      "correct": 2,
+      "explanation": "3 × 2 = 6. Think of it as 3 groups of 2: 2, 4, 6!",
+      "source": "BBC Bitesize KS1 Maths"
+    },
+    {
+      "id": "m68_005",
+      "difficulty": 2,
+      "question": "What is half of 10?",
+      "answers": ["4", "6", "3", "5"],
+      "correct": 3,
+      "explanation": "Half of 10 is 5. Split 10 into two equal groups of 5!",
+      "source": "BBC Bitesize KS1 Maths"
+    }
+  ]
+}

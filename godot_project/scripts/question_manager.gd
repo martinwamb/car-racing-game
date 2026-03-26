@@ -1,0 +1,71 @@
+extends Node
+
+# Loads question packs and serves random questions for the current age group.
+# Tries local packs first, then falls back to the API.
+
+const API_BASE = "https://play.wambugumartin.com/api"
+const LOCAL_PACK_PATH = "res://question_packs/"
+
+signal questions_loaded(questions: Array)
+signal question_load_failed(reason: String)
+
+var _loaded_questions: Array = []
+var _used_indices: Array = []
+
+func load_pack(age_group: String, subject: String) -> void:
+	# Normalise age group to folder name e.g. "6-8" -> "age_6_8"
+	var folder = "age_" + age_group.replace("-", "_")
+	var local_path = LOCAL_PACK_PATH + folder + "/" + subject + ".json"
+
+	if ResourceLoader.exists(local_path):
+		_load_local(local_path)
+	else:
+		_load_remote(age_group, subject)
+
+func _load_local(path: String) -> void:
+	var file = FileAccess.open(path, FileAccess.READ)
+	if file == null:
+		question_load_failed.emit("Cannot open local pack: " + path)
+		return
+	var json = JSON.new()
+	var err = json.parse(file.get_as_text())
+	file.close()
+	if err != OK:
+		question_load_failed.emit("JSON parse error in: " + path)
+		return
+	_store_questions(json.data.get("questions", []))
+
+func _load_remote(age_group: String, subject: String) -> void:
+	var folder = "age_" + age_group.replace("-", "_")
+	var url = API_BASE + "/packs/" + folder + "/" + subject
+	var http = HTTPRequest.new()
+	add_child(http)
+	http.request_completed.connect(_on_remote_loaded.bind(http))
+	http.request(url)
+
+func _on_remote_loaded(result: int, _code: int, _headers, body: PackedByteArray, http: HTTPRequest) -> void:
+	http.queue_free()
+	if result != HTTPRequest.RESULT_SUCCESS:
+		question_load_failed.emit("Network error fetching questions")
+		return
+	var json = JSON.new()
+	if json.parse(body.get_string_from_utf8()) != OK:
+		question_load_failed.emit("Bad JSON from API")
+		return
+	_store_questions(json.data.get("questions", []))
+
+func _store_questions(questions: Array) -> void:
+	_loaded_questions = questions
+	_used_indices.clear()
+	questions_loaded.emit(questions)
+
+func get_random_question() -> Dictionary:
+	if _loaded_questions.is_empty():
+		return {}
+	# Avoid repeating questions until all have been shown
+	if _used_indices.size() >= _loaded_questions.size():
+		_used_indices.clear()
+	var available = range(_loaded_questions.size()).filter(func(i): return i not in _used_indices)
+	var idx = available[randi() % available.size()]
+	_used_indices.append(idx)
+	return _loaded_questions[idx]
