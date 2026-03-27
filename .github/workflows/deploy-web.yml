@@ -8,49 +8,51 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    container:
+      image: barichello/godot-ci:4.3   # pre-installed Godot + export templates
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       # ── Export Godot HTML5 build ──────────────────────────────────────────
-      - name: Install Godot 4.3
-        run: |
-          wget -q https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
-          unzip -q Godot_v4.3-stable_linux.x86_64.zip
-          mv Godot_v4.3-stable_linux.x86_64 /usr/local/bin/godot
-          chmod +x /usr/local/bin/godot
-
-      - name: Install Godot export templates
+      - name: Set up Godot export templates
         run: |
           mkdir -p ~/.local/share/godot/export_templates/4.3.stable
-          wget -q https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_export_templates.tpz
-          unzip -q Godot_v4.3-stable_export_templates.tpz -d /tmp/templates
-          mv /tmp/templates/templates/* ~/.local/share/godot/export_templates/4.3.stable/
+          mv /root/.local/share/godot/export_templates/4.3.stable/* \
+             ~/.local/share/godot/export_templates/4.3.stable/ 2>/dev/null || \
+          cp -r /root/.local/share/godot/export_templates/4.3.stable/* \
+             ~/.local/share/godot/export_templates/4.3.stable/ 2>/dev/null || true
 
       - name: Export HTML5 build
         run: |
           mkdir -p build/web
           cd godot_project
-          godot --headless --export-release "Web" ../build/web/index.html
+          godot --headless --export-release "Web" ../build/web/index.html 2>&1
+          ls -la ../build/web/
 
       - name: Copy question packs into build
         run: cp -r question_packs build/
 
       # ── Deploy to server ──────────────────────────────────────────────────
-      - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.HETZNER_SSH_KEY }}
+      - name: Install SSH client
+        run: apt-get install -y openssh-client rsync
 
-      - name: Add server to known hosts
-        run: ssh-keyscan -H 135.181.205.124 >> ~/.ssh/known_hosts
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.HETZNER_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H 135.181.205.124 >> ~/.ssh/known_hosts
 
       - name: Sync web build to server
         run: |
-          rsync -az --delete build/web/ admin@135.181.205.124:/home/admin/apps/rev-and-learn/web/html/
-          rsync -az --delete question_packs/ admin@135.181.205.124:/home/admin/apps/rev-and-learn/question_packs/
+          rsync -az --delete -e "ssh -i ~/.ssh/deploy_key" \
+            build/web/ admin@135.181.205.124:/home/admin/apps/rev-and-learn/web/html/
+          rsync -az --delete -e "ssh -i ~/.ssh/deploy_key" \
+            question_packs/ admin@135.181.205.124:/home/admin/apps/rev-and-learn/question_packs/
 
-      - name: Rebuild and restart containers
+      - name: Restart containers on server
         run: |
-          ssh admin@135.181.205.124 "cd /home/admin/apps/rev-and-learn && docker compose build game-api && docker compose up -d"
+          ssh -i ~/.ssh/deploy_key admin@135.181.205.124 \
+            "cd /home/admin/apps/rev-and-learn && docker compose up -d"
