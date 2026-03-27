@@ -66,3 +66,62 @@ modulate = Color(1, 0.84, 0, 0)
 horizontal_alignment = 1
 add_theme_font_size_override = "font_size"
 theme_override_font_sizes/font_size = 20
+
+; ── On-screen touch controls (also usable on desktop, keyboard still works) ──
+[node name="TouchControls" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+; LEFT SIDE — steering buttons
+[node name="TurnLeftBtn" type="Button" parent="TouchControls"]
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -130.0
+offset_right = 130.0
+offset_bottom = -20.0
+text = "◄"
+modulate = Color(1, 1, 1, 0.65)
+theme_override_font_sizes/font_size = 36
+
+[node name="TurnRightBtn" type="Button" parent="TouchControls"]
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 150.0
+offset_top = -130.0
+offset_right = 260.0
+offset_bottom = -20.0
+text = "►"
+modulate = Color(1, 1, 1, 0.65)
+theme_override_font_sizes/font_size = 36
+
+; RIGHT SIDE — accelerate / brake buttons
+[node name="AccelBtn" type="Button" parent="TouchControls"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -130.0
+offset_top = -130.0
+offset_right = -20.0
+offset_bottom = -20.0
+text = "▲"
+modulate = Color(0.4, 1, 0.4, 0.65)
+theme_override_font_sizes/font_size = 36
+
+[node name="BrakeBtn" type="Button" parent="TouchControls"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -260.0
+offset_top = -130.0
+offset_right = -150.0
+offset_bottom = -20.0
+text = "▼"
+modulate = Color(1, 0.5, 0.4, 0.65)
+theme_override_font_sizes/font_size = 36

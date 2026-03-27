@@ -4,12 +4,26 @@ extends CanvasLayer
 @onready var timer_label: Label = $TopBar/HBoxContainer/TimerLabel
 @onready var lap_label: Label = $TopBar/HBoxContainer/LapLabel
 @onready var coin_popup: Label = $CoinPopup
+@onready var _accel_btn: Button = $TouchControls/AccelBtn
+@onready var _brake_btn: Button = $TouchControls/BrakeBtn
+@onready var _left_btn: Button = $TouchControls/TurnLeftBtn
+@onready var _right_btn: Button = $TouchControls/TurnRightBtn
 
 var _popup_tween: Tween
 
 func _ready() -> void:
 	coins_label.text = str(AgeProfile.total_coins)
 	CoinSystem.coins_changed.connect(_on_coins_changed)
+
+	# Wire touch buttons → Input action press/release so car_controller.gd needs no changes
+	_accel_btn.button_down.connect(func(): Input.action_press("accelerate"))
+	_accel_btn.button_up.connect(func(): Input.action_release("accelerate"))
+	_brake_btn.button_down.connect(func(): Input.action_press("brake"))
+	_brake_btn.button_up.connect(func(): Input.action_release("brake"))
+	_left_btn.button_down.connect(func(): Input.action_press("turn_left"))
+	_left_btn.button_up.connect(func(): Input.action_release("turn_left"))
+	_right_btn.button_down.connect(func(): Input.action_press("turn_right"))
+	_right_btn.button_up.connect(func(): Input.action_release("turn_right"))
 
 func update_timer(seconds: float) -> void:
 	var m = int(seconds) / 60
