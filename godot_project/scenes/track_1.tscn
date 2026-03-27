@@ -29,10 +29,10 @@ script = ExtResource("6_ctrl")
 
 ; ── Background ──────────────────────────────────────────────────────────────
 [node name="Background" type="ColorRect" parent="."]
-offset_left = -800.0
-offset_top = -600.0
-offset_right = 800.0
-offset_bottom = 600.0
+offset_left = -4000.0
+offset_top = -4000.0
+offset_right = 4000.0
+offset_bottom = 4000.0
 color = Color(0.18, 0.45, 0.18, 1)
 
 ; ── Road surface (drawn as a wide oval using Polygon2D outer - inner) ───────

@@ -19,6 +19,11 @@ signal answered(correct: bool, coins_earned: int)
 var _current_question: Dictionary = {}
 var _difficulty: int = 1
 
+func _ready() -> void:
+	for i in range(buttons.size()):
+		buttons[i].pressed.connect(_on_answer_pressed.bind(i))
+	continue_btn.pressed.connect(_on_continue_pressed)
+
 func show_question(question: Dictionary) -> void:
 	_current_question = question
 	_difficulty = question.get("difficulty", 1)
