@@ -70,7 +70,7 @@ offset_top = 248.0
 offset_right = -18.0
 offset_bottom = 388.0
 texture = ExtResource("2_yellow")
-stretch_mode = 1
+stretch_mode = 0
 
 ; Medium car — middle lane
 [node name="CarRed" type="TextureRect" parent="Cars"]
@@ -79,7 +79,7 @@ offset_top = 330.0
 offset_right = -30.0
 offset_bottom = 505.0
 texture = ExtResource("3_red")
-stretch_mode = 1
+stretch_mode = 0
 
 ; Large / "close" car — bottom lane
 [node name="CarBlue" type="TextureRect" parent="Cars"]
@@ -88,7 +88,7 @@ offset_top = 435.0
 offset_right = -40.0
 offset_bottom = 645.0
 texture = ExtResource("4_blue")
-stretch_mode = 1
+stretch_mode = 0
 
 ; ── Title (fades in over cars) ────────────────────────────────────────────────
 [node name="TitleContainer" type="VBoxContainer" parent="."]

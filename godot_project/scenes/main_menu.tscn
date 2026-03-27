@@ -92,7 +92,7 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = SubResource("GradientTexture2D_bg")
-stretch_mode = 1
+stretch_mode = 0
 
 ; ── Racing stripes ────────────────────────────────────────────────────────────
 [node name="StripeTop" type="ColorRect" parent="."]
@@ -116,7 +116,7 @@ offset_right = 485.0
 offset_bottom = 740.0
 modulate = Color(1, 1, 1, 0.15)
 texture = ExtResource("2_carred")
-stretch_mode = 1
+stretch_mode = 0
 
 [node name="CarRight" type="TextureRect" parent="."]
 offset_left = 795.0
@@ -126,7 +126,7 @@ offset_bottom = 740.0
 modulate = Color(1, 1, 1, 0.15)
 texture = ExtResource("3_carblue")
 flip_h = true
-stretch_mode = 1
+stretch_mode = 0
 
 ; ── Main content (centered VBox) ─────────────────────────────────────────────
 [node name="VBox" type="VBoxContainer" parent="."]
