@@ -1,7 +1,6 @@
 # Godot
 godot_project/.godot/
 godot_project/*.import
-godot_project/export_presets.cfg
 godot_project/*.keystore
 
 # Build output
