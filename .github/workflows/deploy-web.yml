@@ -6,21 +6,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  # ── Job 1: Export game using pre-built Godot Docker image ─────────────────
+  build:
     runs-on: ubuntu-latest
     container:
-      image: barichello/godot-ci:4.3   # pre-installed Godot + export templates
+      image: barichello/godot-ci:4.3
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # ── Export Godot HTML5 build ──────────────────────────────────────────
-      - name: Set up Godot export templates
+      - name: Set up export templates
         run: |
           mkdir -p ~/.local/share/godot/export_templates/4.3.stable
-          mv /root/.local/share/godot/export_templates/4.3.stable/* \
-             ~/.local/share/godot/export_templates/4.3.stable/ 2>/dev/null || \
           cp -r /root/.local/share/godot/export_templates/4.3.stable/* \
              ~/.local/share/godot/export_templates/4.3.stable/ 2>/dev/null || true
 
@@ -28,15 +26,29 @@ jobs:
         run: |
           mkdir -p build/web
           cd godot_project
-          godot --headless --export-release "Web" ../build/web/index.html 2>&1
-          ls -la ../build/web/
+          godot --headless --export-release "Web" ../build/web/index.html
 
       - name: Copy question packs into build
         run: cp -r question_packs build/
 
-      # ── Deploy to server ──────────────────────────────────────────────────
-      - name: Install SSH client
-        run: apt-get install -y openssh-client rsync
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-build
+          path: build/
+          retention-days: 1
+
+  # ── Job 2: Deploy to Hetzner (standard Ubuntu, no container quirks) ───────
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: web-build
+          path: build/
 
       - name: Set up SSH key
         run: |
@@ -50,7 +62,7 @@ jobs:
           rsync -az --delete -e "ssh -i ~/.ssh/deploy_key" \
             build/web/ admin@135.181.205.124:/home/admin/apps/rev-and-learn/web/html/
           rsync -az --delete -e "ssh -i ~/.ssh/deploy_key" \
-            question_packs/ admin@135.181.205.124:/home/admin/apps/rev-and-learn/question_packs/
+            build/question_packs/ admin@135.181.205.124:/home/admin/apps/rev-and-learn/question_packs/
 
       - name: Restart containers on server
         run: |
