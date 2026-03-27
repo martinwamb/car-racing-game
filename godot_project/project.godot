@@ -9,9 +9,13 @@ config_version=5
 config/name="Rev & Learn"
 config/description="Educational car racing game for kids"
 config/version="0.1.0"
-run/main_scene="res://scenes/main_menu.tscn"
+run/main_scene="res://scenes/intro.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
-boot_splash/bg_color=Color(0.102, 0.102, 0.18, 1)
+boot_splash/bg_color=Color(0.06, 0.04, 0.12, 1)
+boot_splash/image="res://assets/ui/splash.svg"
+boot_splash/fullsize=true
+boot_splash/use_filter=true
+boot_splash/minimum_display_time=800
 config/icon="res://assets/ui/icon.svg"
 
 [autoload]

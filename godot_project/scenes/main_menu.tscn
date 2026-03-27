@@ -1,52 +1,168 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=11 format=3]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_menu"]
+[ext_resource type="Texture2D" path="res://assets/cars/carRed.png" id="2_carred"]
+[ext_resource type="Texture2D" path="res://assets/cars/carBlue.png" id="3_carblue"]
 
+[sub_resource type="Gradient" id="Gradient_bg"]
+colors = PackedColorArray(0.06, 0.04, 0.12, 1, 0.18, 0.04, 0.04, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bg"]
+gradient = SubResource("Gradient_bg")
+fill_from = Vector2(0, 0)
+fill_to = Vector2(0, 1)
+width = 4
+height = 256
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_play_n"]
+bg_color = Color(0.78, 0.08, 0.08, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+content_margin_left = 20.0
+content_margin_right = 20.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_play_h"]
+bg_color = Color(1.0, 0.18, 0.18, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+content_margin_left = 20.0
+content_margin_right = 20.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_play_p"]
+bg_color = Color(0.5, 0.04, 0.04, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+content_margin_left = 20.0
+content_margin_right = 20.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_shop_n"]
+bg_color = Color(0.14, 0.14, 0.22, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.35, 0.35, 0.6, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_shop_h"]
+bg_color = Color(0.22, 0.22, 0.36, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5, 0.5, 0.9, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+
+; ── Root ─────────────────────────────────────────────────────────────────────
 [node name="MainMenu" type="Control"]
 script = ExtResource("1_menu")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="Background" type="ColorRect" parent="."]
+; ── Background gradient ───────────────────────────────────────────────────────
+[node name="BgGradient" type="TextureRect" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color(0.102, 0.102, 0.18, 1)
+texture = SubResource("GradientTexture2D_bg")
+stretch_mode = 1
 
+; ── Racing stripes ────────────────────────────────────────────────────────────
+[node name="StripeTop" type="ColorRect" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 10.0
+color = Color(0.85, 0.08, 0.08, 1)
+
+[node name="StripeBottom" type="ColorRect" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -10.0
+color = Color(1.0, 0.85, 0.0, 1)
+
+; ── Decorative background cars (faint) ───────────────────────────────────────
+[node name="CarLeft" type="TextureRect" parent="."]
+offset_left = -40.0
+offset_top = 460.0
+offset_right = 485.0
+offset_bottom = 740.0
+modulate = Color(1, 1, 1, 0.15)
+texture = ExtResource("2_carred")
+stretch_mode = 1
+
+[node name="CarRight" type="TextureRect" parent="."]
+offset_left = 795.0
+offset_top = 460.0
+offset_right = 1320.0
+offset_bottom = 740.0
+modulate = Color(1, 1, 1, 0.15)
+texture = ExtResource("3_carblue")
+flip_h = true
+stretch_mode = 1
+
+; ── Main content (centered VBox) ─────────────────────────────────────────────
 [node name="VBox" type="VBoxContainer" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -200.0
-offset_top = -260.0
-offset_right = 200.0
-offset_bottom = 260.0
-theme_override_constants/separation = 16
+offset_left = -220.0
+offset_top = -280.0
+offset_right = 220.0
+offset_bottom = 280.0
+theme_override_constants/separation = 14
 
 [node name="Title" type="Label" parent="VBox"]
 layout_mode = 2
 text = "Rev & Learn"
 horizontal_alignment = 1
-add_theme_font_size_override = "font_size"
-theme_override_font_sizes/font_size = 48
+theme_override_colors/font_color = Color(1.0, 0.85, 0.0, 1)
+theme_override_font_sizes/font_size = 56
 
 [node name="Subtitle" type="Label" parent="VBox"]
 layout_mode = 2
 text = "Race. Answer. Upgrade."
 horizontal_alignment = 1
-modulate = Color(0.7, 0.7, 0.7, 1)
+modulate = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 17
 
 [node name="Coins" type="Label" parent="VBox"]
 layout_mode = 2
 text = "🪙 0 coins"
 horizontal_alignment = 1
-add_theme_font_size_override = "font_size"
+theme_override_colors/font_color = Color(1.0, 0.85, 0.0, 1)
 theme_override_font_sizes/font_size = 20
 
-; ── Age group selection (shown only on first run) ────────────────────────────
+; ── Age group selection ───────────────────────────────────────────────────────
 [node name="AgePanel" type="PanelContainer" parent="VBox"]
 layout_mode = 2
 visible = true
@@ -84,21 +200,28 @@ layout_mode = 2
 custom_minimum_size = Vector2(80, 44)
 text = "12 +"
 
-; ── Main buttons ─────────────────────────────────────────────────────────────
+; ── Main buttons ──────────────────────────────────────────────────────────────
 [node name="PlayBtn" type="Button" parent="VBox"]
 layout_mode = 2
-custom_minimum_size = Vector2(0, 56)
-text = "▶  PLAY"
-add_theme_font_size_override = "font_size"
-theme_override_font_sizes/font_size = 26
+custom_minimum_size = Vector2(0, 64)
+text = "🏁  PLAY"
 disabled = true
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_play_n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_play_h")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_play_p")
 
 [node name="ShopBtn" type="Button" parent="VBox"]
 layout_mode = 2
 custom_minimum_size = Vector2(0, 44)
 text = "🛒  Upgrade Shop"
+theme_override_colors/font_color = Color(0.88, 0.88, 0.88, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_shop_n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_shop_h")
 
 [node name="ChangeAgeBtn" type="Button" parent="VBox"]
 layout_mode = 2
 custom_minimum_size = Vector2(0, 36)
 text = "Change Age Group"
+theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)

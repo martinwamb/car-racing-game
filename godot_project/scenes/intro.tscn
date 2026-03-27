@@ -1,0 +1,127 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/intro.gd" id="1_intro"]
+[ext_resource type="Texture2D" path="res://assets/cars/carYellow.png" id="2_yellow"]
+[ext_resource type="Texture2D" path="res://assets/cars/carRed.png" id="3_red"]
+[ext_resource type="Texture2D" path="res://assets/cars/carBlue.png" id="4_blue"]
+
+[node name="Intro" type="Control"]
+script = ExtResource("1_intro")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+; ── Dark gradient background ──────────────────────────────────────────────────
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.06, 0.04, 0.12, 1)
+
+; ── Racing stripes ────────────────────────────────────────────────────────────
+[node name="StripeTop" type="ColorRect" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 10.0
+color = Color(0.85, 0.08, 0.08, 1)
+
+[node name="StripeBottom" type="ColorRect" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -10.0
+color = Color(1.0, 0.85, 0.0, 1)
+
+; ── Speed lines (decorative faint diagonals via thin rects) ──────────────────
+[node name="SpeedLine1" type="ColorRect" parent="."]
+offset_left = -200.0
+offset_top = 0.0
+offset_right = 400.0
+offset_bottom = 3.0
+rotation = 0.5236
+modulate = Color(1, 0.2, 0.2, 0.07)
+
+[node name="SpeedLine2" type="ColorRect" parent="."]
+offset_left = -100.0
+offset_top = 0.0
+offset_right = 500.0
+offset_bottom = 3.0
+rotation = 0.5236
+modulate = Color(1, 0.2, 0.2, 0.05)
+
+[node name="SpeedLine3" type="ColorRect" parent="."]
+offset_left = 780.0
+offset_top = 0.0
+offset_right = 1500.0
+offset_bottom = 3.0
+rotation = -0.5236
+modulate = Color(1, 0.2, 0.2, 0.07)
+
+; ── Car sprites (animated by intro.gd) ───────────────────────────────────────
+[node name="Cars" type="Control" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+; Small / "far away" car — top lane
+[node name="CarYellow" type="TextureRect" parent="Cars"]
+offset_left = -280.0
+offset_top = 248.0
+offset_right = -18.0
+offset_bottom = 388.0
+texture = ExtResource("2_yellow")
+stretch_mode = 1
+
+; Medium car — middle lane
+[node name="CarRed" type="TextureRect" parent="Cars"]
+offset_left = -380.0
+offset_top = 330.0
+offset_right = -30.0
+offset_bottom = 505.0
+texture = ExtResource("3_red")
+stretch_mode = 1
+
+; Large / "close" car — bottom lane
+[node name="CarBlue" type="TextureRect" parent="Cars"]
+offset_left = -480.0
+offset_top = 435.0
+offset_right = -40.0
+offset_bottom = 645.0
+texture = ExtResource("4_blue")
+stretch_mode = 1
+
+; ── Title (fades in over cars) ────────────────────────────────────────────────
+[node name="TitleContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -120.0
+offset_right = 300.0
+offset_bottom = 60.0
+theme_override_constants/separation = 12
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="TitleContainer"]
+layout_mode = 2
+text = "Rev & Learn"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(1.0, 0.85, 0.0, 1)
+theme_override_font_sizes/font_size = 72
+
+[node name="Subtitle" type="Label" parent="TitleContainer"]
+layout_mode = 2
+text = "Race. Answer. Upgrade."
+horizontal_alignment = 1
+modulate = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 22
+
+; ── Fullscreen fade rect (black) used for fade in/out ────────────────────────
+[node name="FadeRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 1)
+mouse_filter = 2
