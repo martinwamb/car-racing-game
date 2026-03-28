@@ -46,6 +46,141 @@
       "correct": 3,
       "explanation": "One hand has 5 fingers. Hold up your hand and count them!",
       "source": "BBC Bitesize Early Years"
+    },
+    {
+      "id": "m35_006",
+      "difficulty": 1,
+      "question": "What is 1 + 1?",
+      "answers": ["3", "1", "2", "4"],
+      "correct": 2,
+      "explanation": "1 plus 1 equals 2. If you have 1 sweet and get 1 more, you have 2!",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "m35_007",
+      "difficulty": 1,
+      "question": "How many sides does a square have?",
+      "answers": ["3", "5", "6", "4"],
+      "correct": 3,
+      "explanation": "A square has 4 equal sides. All four sides are the same length!",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "m35_008",
+      "difficulty": 1,
+      "question": "Which number comes before 3?",
+      "answers": ["4", "5", "2", "1"],
+      "correct": 2,
+      "explanation": "When we count 1, 2, 3 — the number 2 comes just before 3.",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "m35_009",
+      "difficulty": 1,
+      "question": "What is 2 + 2?",
+      "answers": ["3", "5", "4", "6"],
+      "correct": 2,
+      "explanation": "2 plus 2 equals 4. Two pairs of socks make 4 socks!",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "m35_010",
+      "difficulty": 1,
+      "question": "How many wheels does a tricycle have?",
+      "answers": ["2", "4", "3", "5"],
+      "correct": 2,
+      "explanation": "A tricycle has 3 wheels — that is why it starts with 'tri', which means three!",
+      "source": "BBC Bitesize Early Years"
+    },
+    {
+      "id": "m35_011",
+      "difficulty": 1,
+      "question": "Which shape is round like a wheel?",
+      "answers": ["Square", "Triangle", "Circle", "Rectangle"],
+      "correct": 2,
+      "explanation": "A circle is perfectly round — just like a wheel!",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "m35_012",
+      "difficulty": 1,
+      "question": "If you have 3 sweets and eat 1, how many are left?",
+      "answers": ["1", "4", "3", "2"],
+      "correct": 3,
+      "explanation": "3 take away 1 leaves 2 sweets. Subtraction means taking away!",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "m35_013",
+      "difficulty": 1,
+      "question": "What is the smallest number here?",
+      "answers": ["9", "6", "8", "1"],
+      "correct": 3,
+      "explanation": "1 is the smallest because it comes first when we count: 1, 2, 3...",
+      "source": "National Curriculum EYFS"
+    },
+    {
+      "id": "m35_014",
+      "difficulty": 1,
+      "question": "How many eyes do you have?",
+      "answers": ["3", "4", "1", "2"],
+      "correct": 3,
+      "explanation": "Humans have 2 eyes, one on each side of the nose.",
+      "source": "National Curriculum EYFS"
+    },
+    {
+      "id": "m35_015",
+      "difficulty": 1,
+      "question": "Count the stars: ⭐⭐⭐⭐ — How many?",
+      "answers": ["3", "5", "4", "6"],
+      "correct": 2,
+      "explanation": "There are 4 stars. Count them one at a time: 1, 2, 3, 4!",
+      "source": "National Curriculum EYFS"
+    },
+    {
+      "id": "m35_016",
+      "difficulty": 1,
+      "question": "What shape is a door?",
+      "answers": ["Circle", "Triangle", "Rectangle", "Star"],
+      "correct": 2,
+      "explanation": "A door is a rectangle — it has 4 sides, with two long sides and two short sides.",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "m35_017",
+      "difficulty": 1,
+      "question": "What is 5 - 2?",
+      "answers": ["4", "2", "3", "1"],
+      "correct": 2,
+      "explanation": "5 take away 2 equals 3. Count back: 5... 4, 3!",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "m35_018",
+      "difficulty": 1,
+      "question": "How many legs does a cat have?",
+      "answers": ["2", "6", "3", "4"],
+      "correct": 3,
+      "explanation": "A cat has 4 legs. Most animals with fur have 4 legs!",
+      "source": "National Curriculum EYFS"
+    },
+    {
+      "id": "m35_019",
+      "difficulty": 1,
+      "question": "What number comes after 9?",
+      "answers": ["8", "11", "10", "12"],
+      "correct": 2,
+      "explanation": "After 9 comes 10. We use two digits to write 10 for the first time!",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "m35_020",
+      "difficulty": 1,
+      "question": "If you share 4 apples equally between 2 people, how many does each person get?",
+      "answers": ["4", "1", "3", "2"],
+      "correct": 3,
+      "explanation": "4 shared between 2 means each person gets 2 apples. Sharing equally is the start of division!",
+      "source": "National Curriculum Y1"
     }
   ]
 }

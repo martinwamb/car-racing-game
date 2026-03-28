@@ -39,8 +39,163 @@
       "question": "Which gas do plants absorb during photosynthesis and release during respiration?",
       "answers": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
       "correct": 2,
-      "explanation": "Plants absorb CO₂ for photosynthesis and release it during respiration. They also absorb O₂ during respiration and release it during photosynthesis.",
+      "explanation": "Plants absorb CO2 for photosynthesis and release it during respiration. They also absorb O2 during respiration and release it during photosynthesis.",
       "source": "BBC Bitesize KS3 Biology"
+    },
+    {
+      "id": "s12_006", "difficulty": 4,
+      "question": "What is Newton's First Law of Motion?",
+      "answers": ["F = ma", "Every action has an equal and opposite reaction", "An object remains at rest or in uniform motion unless acted upon by a resultant force", "Energy cannot be created or destroyed"],
+      "correct": 2,
+      "explanation": "Newton's First Law (the law of inertia): objects continue in their current state of motion unless a net force acts on them.",
+      "source": "National Curriculum KS3 Physics"
+    },
+    {
+      "id": "s12_007", "difficulty": 4,
+      "question": "What is the atomic number of carbon?",
+      "answers": ["6", "8", "12", "14"],
+      "correct": 0,
+      "explanation": "Carbon has 6 protons in its nucleus, giving it the atomic number 6. The mass number (12 for the most common isotope) is different.",
+      "source": "National Curriculum KS3 Chemistry"
+    },
+    {
+      "id": "s12_008", "difficulty": 4,
+      "question": "Which organelle is known as the 'powerhouse of the cell'?",
+      "answers": ["Nucleus", "Ribosome", "Mitochondria", "Cell membrane"],
+      "correct": 2,
+      "explanation": "Mitochondria produce ATP through cellular respiration — the cell's main energy currency. More active cells have more mitochondria.",
+      "source": "National Curriculum KS3 Biology"
+    },
+    {
+      "id": "s12_009", "difficulty": 4,
+      "question": "What type of wave is light?",
+      "answers": ["Mechanical wave", "Longitudinal wave", "Transverse wave", "Sound wave"],
+      "correct": 2,
+      "explanation": "Light is a transverse electromagnetic wave that can travel through a vacuum. Sound waves are longitudinal and require a medium.",
+      "source": "National Curriculum KS3 Physics"
+    },
+    {
+      "id": "s12_010", "difficulty": 4,
+      "question": "What is the word equation for aerobic respiration?",
+      "answers": [
+        "glucose + oxygen → carbon dioxide + water + energy",
+        "glucose + water → oxygen + carbon dioxide + energy",
+        "carbon dioxide + water → glucose + oxygen",
+        "glucose → lactic acid + energy"
+      ],
+      "correct": 0,
+      "explanation": "Aerobic respiration: glucose + oxygen → carbon dioxide + water (+ energy as ATP). This occurs in the mitochondria.",
+      "source": "National Curriculum KS3 Biology"
+    },
+    {
+      "id": "s12_011", "difficulty": 4,
+      "question": "What is Ohm's Law?",
+      "answers": ["P = IV", "V = IR", "E = mc²", "F = ma"],
+      "correct": 1,
+      "explanation": "Ohm's Law: V = IR (Voltage = Current × Resistance). It describes the relationship between these three electrical quantities.",
+      "source": "National Curriculum KS3 Physics"
+    },
+    {
+      "id": "s12_012", "difficulty": 4,
+      "question": "What is natural selection?",
+      "answers": [
+        "When humans selectively breed animals for desired traits",
+        "The random mutation of genes over time",
+        "The process by which organisms with favourable traits are more likely to survive and reproduce",
+        "When species migrate to better environments"
+      ],
+      "correct": 2,
+      "explanation": "Natural selection: organisms with traits better suited to their environment survive longer and reproduce more, passing on those traits.",
+      "source": "National Curriculum KS3 Biology"
+    },
+    {
+      "id": "s12_013", "difficulty": 4,
+      "question": "What happens during an exothermic reaction?",
+      "answers": ["Energy is absorbed from the surroundings", "Temperature of surroundings decreases", "Energy is released to the surroundings", "No energy change occurs"],
+      "correct": 2,
+      "explanation": "Exothermic reactions release energy (usually as heat) to the surroundings. Combustion and neutralisation are examples. Temperature rises.",
+      "source": "National Curriculum KS3 Chemistry"
+    },
+    {
+      "id": "s12_014", "difficulty": 4,
+      "question": "What is the speed of light in a vacuum?",
+      "answers": ["300,000 m/s", "300,000 km/s", "30,000 km/s", "3,000,000 km/s"],
+      "correct": 1,
+      "explanation": "Light travels at approximately 300,000 km/s (3 × 10⁸ m/s) in a vacuum. It takes about 8 minutes to travel from the Sun to Earth.",
+      "source": "National Curriculum KS3 Physics"
+    },
+    {
+      "id": "s12_015", "difficulty": 4,
+      "question": "What is the difference between a mixture and a compound?",
+      "answers": [
+        "A mixture is pure; a compound is impure",
+        "In a compound, elements are chemically bonded; in a mixture, substances are physically combined and can be separated easily",
+        "A mixture involves only one element; a compound involves two",
+        "Compounds can be separated by filtering; mixtures cannot"
+      ],
+      "correct": 1,
+      "explanation": "A compound (e.g. water, H2O) has elements chemically bonded with fixed ratios. A mixture (e.g. salt water) is physically combined and separable.",
+      "source": "National Curriculum KS3 Chemistry"
+    },
+    {
+      "id": "s12_016", "difficulty": 4,
+      "question": "What is the function of DNA in a cell?",
+      "answers": [
+        "To produce energy for the cell",
+        "To carry the genetic instructions for growth, function and reproduction",
+        "To transport oxygen around the body",
+        "To digest food in the stomach"
+      ],
+      "correct": 1,
+      "explanation": "DNA (deoxyribonucleic acid) contains the genetic code. It provides instructions for making proteins and determines inherited characteristics.",
+      "source": "National Curriculum KS3 Biology"
+    },
+    {
+      "id": "s12_017", "difficulty": 4,
+      "question": "What causes a car engine to produce power through combustion?",
+      "answers": [
+        "Fuel reacting with nitrogen in the air",
+        "Fuel rapidly reacting with oxygen, releasing energy",
+        "Water evaporating under high pressure",
+        "Electrical energy converted to movement"
+      ],
+      "correct": 1,
+      "explanation": "In an internal combustion engine, fuel (petrol or diesel) reacts with oxygen in an exothermic reaction. The expanding gases push pistons to create movement.",
+      "source": "National Curriculum KS3 Chemistry/Physics"
+    },
+    {
+      "id": "s12_018", "difficulty": 4,
+      "question": "What is the law of conservation of energy?",
+      "answers": [
+        "Energy is always created when two objects collide",
+        "Energy cannot be created or destroyed, only transferred or transformed",
+        "Potential energy always equals kinetic energy",
+        "Energy is lost as heat in every reaction"
+      ],
+      "correct": 1,
+      "explanation": "The law of conservation of energy states that energy cannot be created or destroyed — only converted between forms (e.g. kinetic to heat).",
+      "source": "National Curriculum KS3 Physics"
+    },
+    {
+      "id": "s12_019", "difficulty": 4,
+      "question": "What is the difference between speed and velocity?",
+      "answers": [
+        "Speed uses km/h; velocity uses m/s",
+        "Speed is a scalar quantity (magnitude only); velocity is a vector (magnitude and direction)",
+        "Velocity is always faster than speed",
+        "Speed measures distance; velocity measures acceleration"
+      ],
+      "correct": 1,
+      "explanation": "Speed tells you how fast (e.g. 60 km/h). Velocity tells you how fast AND in which direction (e.g. 60 km/h north). Velocity is a vector.",
+      "source": "National Curriculum KS3 Physics"
+    },
+    {
+      "id": "s12_020", "difficulty": 4,
+      "question": "What is the formula for calculating kinetic energy?",
+      "answers": ["KE = mgh", "KE = ½mv²", "KE = mv", "KE = Fd"],
+      "correct": 1,
+      "explanation": "Kinetic energy = ½ × mass × velocity². KE = ½mv². This shows why faster cars carry far more energy — doubling speed quadruples KE.",
+      "source": "National Curriculum KS3 Physics"
     }
   ]
 }

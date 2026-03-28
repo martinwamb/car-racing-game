@@ -71,6 +71,7 @@ theme_override_font_sizes/font_size = 20
 [node name="TouchControls" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 
 ; LEFT SIDE — steering buttons
 [node name="TurnLeftBtn" type="Button" parent="TouchControls"]

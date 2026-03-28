@@ -41,6 +41,126 @@
       "correct": 2,
       "explanation": "Spiders have 8 legs! That is two more than insects, which have 6.",
       "source": "BBC Bitesize Early Years Science"
+    },
+    {
+      "id": "s35_006", "difficulty": 1,
+      "question": "What sound does a dog make?",
+      "answers": ["Meow", "Moo", "Woof", "Quack"],
+      "correct": 2,
+      "explanation": "Dogs bark or woof! Each animal has its own special sound.",
+      "source": "EYFS"
+    },
+    {
+      "id": "s35_007", "difficulty": 1,
+      "question": "Which of these can fly?",
+      "answers": ["Fish", "Dog", "Bird", "Cat"],
+      "correct": 2,
+      "explanation": "Birds have wings and can fly. Fish swim, and dogs and cats walk on land.",
+      "source": "EYFS Science"
+    },
+    {
+      "id": "s35_008", "difficulty": 1,
+      "question": "Which season is the hottest?",
+      "answers": ["Spring", "Summer", "Autumn", "Winter"],
+      "correct": 1,
+      "explanation": "Summer is the hottest season. The sun shines longer and the days are warm!",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "s35_009", "difficulty": 1,
+      "question": "What do we use our eyes for?",
+      "answers": ["Hearing", "Smelling", "Seeing", "Tasting"],
+      "correct": 2,
+      "explanation": "We use our eyes to see! Our five senses are sight, hearing, smell, touch and taste.",
+      "source": "EYFS Science"
+    },
+    {
+      "id": "s35_010", "difficulty": 1,
+      "question": "Which of these is a living thing?",
+      "answers": ["Rock", "Car", "Flower", "Brick"],
+      "correct": 2,
+      "explanation": "A flower is a living thing — it grows, needs water and sunlight, and is part of a plant.",
+      "source": "EYFS Science"
+    },
+    {
+      "id": "s35_011", "difficulty": 1,
+      "question": "What do caterpillars turn into?",
+      "answers": ["Spiders", "Bees", "Butterflies", "Ants"],
+      "correct": 2,
+      "explanation": "Caterpillars go into a cocoon and change into butterflies! This is called metamorphosis.",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "s35_012", "difficulty": 1,
+      "question": "Which season has the most snow?",
+      "answers": ["Spring", "Summer", "Autumn", "Winter"],
+      "correct": 3,
+      "explanation": "Winter is the coldest season and is most likely to bring snow and frost!",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "s35_013", "difficulty": 1,
+      "question": "What animal lives in the sea and has fins?",
+      "answers": ["Cat", "Fish", "Dog", "Hen"],
+      "correct": 1,
+      "explanation": "Fish live in the sea and rivers, and use their fins to swim through the water.",
+      "source": "EYFS Science"
+    },
+    {
+      "id": "s35_014", "difficulty": 1,
+      "question": "What do we breathe in to stay alive?",
+      "answers": ["Water", "Smoke", "Air", "Juice"],
+      "correct": 2,
+      "explanation": "We breathe in air, and our lungs take out the oxygen we need to live.",
+      "source": "EYFS Science"
+    },
+    {
+      "id": "s35_015", "difficulty": 1,
+      "question": "Which of these is a fruit that grows on a tree?",
+      "answers": ["Carrot", "Potato", "Apple", "Onion"],
+      "correct": 2,
+      "explanation": "Apples grow on apple trees! Carrots and potatoes grow underground, and onions are bulbs.",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "s35_016", "difficulty": 1,
+      "question": "What do cows give us to drink?",
+      "answers": ["Juice", "Water", "Milk", "Tea"],
+      "correct": 2,
+      "explanation": "Cows produce milk, which farmers collect for us to drink and use to make cheese and butter!",
+      "source": "EYFS Science"
+    },
+    {
+      "id": "s35_017", "difficulty": 1,
+      "question": "What comes out of the sky when it rains?",
+      "answers": ["Sand", "Snow", "Water", "Leaves"],
+      "correct": 2,
+      "explanation": "Rain is water that falls from clouds in the sky. It helps plants grow and fills our rivers!",
+      "source": "EYFS Science"
+    },
+    {
+      "id": "s35_018", "difficulty": 1,
+      "question": "Which of these animals has a shell?",
+      "answers": ["Dog", "Cat", "Rabbit", "Snail"],
+      "correct": 3,
+      "explanation": "A snail carries a hard shell on its back to protect its soft body!",
+      "source": "EYFS Science"
+    },
+    {
+      "id": "s35_019", "difficulty": 1,
+      "question": "What does the Sun give us?",
+      "answers": ["Rain and cold", "Light and warmth", "Snow and ice", "Wind and clouds"],
+      "correct": 1,
+      "explanation": "The Sun gives us light and warmth. Without the Sun, it would be dark and very cold!",
+      "source": "EYFS Science"
+    },
+    {
+      "id": "s35_020", "difficulty": 1,
+      "question": "What noise does a lion make?",
+      "answers": ["Tweet", "Squeak", "Roar", "Cluck"],
+      "correct": 2,
+      "explanation": "Lions roar! It is one of the loudest sounds in the animal kingdom.",
+      "source": "EYFS"
     }
   ]
 }

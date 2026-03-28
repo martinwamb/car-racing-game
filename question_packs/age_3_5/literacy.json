@@ -41,6 +41,126 @@
       "correct": 1,
       "explanation": "Cat and Hat rhyme — they both end in the sound 'at'!",
       "source": "BBC Bitesize Early Years Phonics"
+    },
+    {
+      "id": "l35_006", "difficulty": 1,
+      "question": "What letter does 'Ball' start with?",
+      "answers": ["D", "P", "B", "R"],
+      "correct": 2,
+      "explanation": "Ball starts with the letter B! B is for Ball.",
+      "source": "Phonics Phase 2"
+    },
+    {
+      "id": "l35_007", "difficulty": 1,
+      "question": "Which word rhymes with 'dog'?",
+      "answers": ["Cat", "Fish", "Log", "Bird"],
+      "correct": 2,
+      "explanation": "Dog and Log both end with the '-og' sound, so they rhyme!",
+      "source": "Phonics Phase 3"
+    },
+    {
+      "id": "l35_008", "difficulty": 1,
+      "question": "How many letters are in the word 'SUN'?",
+      "answers": ["2", "4", "3", "5"],
+      "correct": 2,
+      "explanation": "S-U-N has 3 letters. Count them: S, U, N — that is 3!",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "l35_009", "difficulty": 1,
+      "question": "Which of these is a colour?",
+      "answers": ["Jump", "Red", "Chair", "Fast"],
+      "correct": 1,
+      "explanation": "Red is a colour. Jump is an action, Chair is an object, and Fast describes how something moves.",
+      "source": "EYFS"
+    },
+    {
+      "id": "l35_010", "difficulty": 1,
+      "question": "What comes at the end of a sentence?",
+      "answers": ["A comma","A full stop","A letter","A number"],
+      "correct": 1,
+      "explanation": "A full stop (.) goes at the end of a sentence to show it has finished.",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "l35_011", "difficulty": 1,
+      "question": "What letter does 'Train' start with?",
+      "answers": ["S", "B", "T", "R"],
+      "correct": 2,
+      "explanation": "Train starts with the letter T! T is for Train.",
+      "source": "Phonics Phase 2"
+    },
+    {
+      "id": "l35_012", "difficulty": 1,
+      "question": "Which word is an action (doing) word?",
+      "answers": ["Table", "Blue", "Run", "Apple"],
+      "correct": 2,
+      "explanation": "Run is an action word — you can do it! Table and Apple are things, Blue is a colour.",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "l35_013", "difficulty": 1,
+      "question": "Which word rhymes with 'car'?",
+      "answers": ["Bus", "Star", "Truck", "Bike"],
+      "correct": 1,
+      "explanation": "Car and Star both end with the '-ar' sound, so they rhyme!",
+      "source": "Phonics Phase 3"
+    },
+    {
+      "id": "l35_014", "difficulty": 1,
+      "question": "What letter does 'Moon' start with?",
+      "answers": ["N", "B", "W", "M"],
+      "correct": 3,
+      "explanation": "Moon starts with the letter M! M is for Moon.",
+      "source": "Phonics Phase 2"
+    },
+    {
+      "id": "l35_015", "difficulty": 1,
+      "question": "How many letters are in the word 'BIG'?",
+      "answers": ["2", "4", "3", "5"],
+      "correct": 2,
+      "explanation": "B-I-G has 3 letters. Count them on your fingers: B, I, G!",
+      "source": "National Curriculum Y1"
+    },
+    {
+      "id": "l35_016", "difficulty": 1,
+      "question": "Which of these is a fruit?",
+      "answers": ["Car", "Apple", "Book", "Door"],
+      "correct": 1,
+      "explanation": "An apple is a fruit that grows on a tree. The others are objects.",
+      "source": "EYFS"
+    },
+    {
+      "id": "l35_017", "difficulty": 1,
+      "question": "What sound does the letter 'M' make?",
+      "answers": ["Sss", "Buh", "Mmm", "Tuh"],
+      "correct": 2,
+      "explanation": "M makes the 'mmm' sound — like when something tastes delicious! M is for Mum.",
+      "source": "Phonics Phase 2"
+    },
+    {
+      "id": "l35_018", "difficulty": 1,
+      "question": "Which word rhymes with 'bed'?",
+      "answers": ["Mat", "Sit", "Red", "Top"],
+      "correct": 2,
+      "explanation": "Bed and Red both end with the '-ed' sound, so they rhyme!",
+      "source": "Phonics Phase 3"
+    },
+    {
+      "id": "l35_019", "difficulty": 1,
+      "question": "What letter does 'Dog' start with?",
+      "answers": ["B", "G", "P", "D"],
+      "correct": 3,
+      "explanation": "Dog starts with the letter D! D is for Dog.",
+      "source": "Phonics Phase 2"
+    },
+    {
+      "id": "l35_020", "difficulty": 1,
+      "question": "Which of these words is a name?",
+      "answers": ["Run", "Happy", "Emma", "Big"],
+      "correct": 2,
+      "explanation": "Emma is a name — names always start with a capital letter. Run is an action, Happy describes something, Big is a size.",
+      "source": "National Curriculum Y1"
     }
   ]
 }

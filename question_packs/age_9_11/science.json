@@ -46,6 +46,131 @@
       "correct": 3,
       "explanation": "Electrical resistance is measured in Ohms (Ω), named after Georg Ohm. Ohm's Law: V = I × R.",
       "source": "BBC Bitesize KS2 Science"
+    },
+    {
+      "id": "s911_006", "difficulty": 3,
+      "question": "What is the function of the heart?",
+      "answers": ["To breathe air", "To pump blood around the body", "To digest food", "To filter waste"],
+      "correct": 1,
+      "explanation": "The heart is a muscle that pumps blood throughout the circulatory system, delivering oxygen and nutrients to cells.",
+      "source": "National Curriculum Y6"
+    },
+    {
+      "id": "s911_007", "difficulty": 3,
+      "question": "What force pulls objects towards Earth?",
+      "answers": ["Magnetism", "Friction", "Gravity", "Air resistance"],
+      "correct": 2,
+      "explanation": "Gravity is the force that pulls all objects towards the centre of the Earth. It keeps us on the ground and the Moon in orbit.",
+      "source": "National Curriculum Y5"
+    },
+    {
+      "id": "s911_008", "difficulty": 3,
+      "question": "Which of these is a renewable energy source?",
+      "answers": ["Coal", "Natural gas", "Oil", "Solar power"],
+      "correct": 3,
+      "explanation": "Solar power uses energy from the sun, which is renewable. Coal, gas and oil are fossil fuels — they will eventually run out.",
+      "source": "National Curriculum Y6"
+    },
+    {
+      "id": "s911_009", "difficulty": 3,
+      "question": "What is the role of the lungs in the human body?",
+      "answers": ["To pump blood", "To digest food", "To exchange oxygen and carbon dioxide", "To produce hormones"],
+      "correct": 2,
+      "explanation": "The lungs take in oxygen from the air we breathe and transfer it into the blood, while removing carbon dioxide as waste.",
+      "source": "National Curriculum Y6"
+    },
+    {
+      "id": "s911_010", "difficulty": 3,
+      "question": "What is friction?",
+      "answers": ["A force that pulls objects together", "A force that slows down moving objects by resisting motion", "A force that pushes objects upward", "The force of gravity on a surface"],
+      "correct": 1,
+      "explanation": "Friction is a force that opposes motion between two surfaces. Tyres grip the road because of friction — without it, cars would skid.",
+      "source": "National Curriculum Y5"
+    },
+    {
+      "id": "s911_011", "difficulty": 3,
+      "question": "In a food chain, what is a producer?",
+      "answers": ["An animal that hunts other animals", "A plant that makes its own food using sunlight", "An animal that eats plants", "A decomposer that breaks down dead matter"],
+      "correct": 1,
+      "explanation": "Producers (plants) use photosynthesis to make food from sunlight. They are always at the start of a food chain.",
+      "source": "National Curriculum Y6"
+    },
+    {
+      "id": "s911_012", "difficulty": 3,
+      "question": "What causes day and night on Earth?",
+      "answers": ["Earth orbiting the Sun once a year", "The Moon blocking the Sun", "Earth spinning on its own axis every 24 hours", "The Sun moving around the Earth"],
+      "correct": 2,
+      "explanation": "Earth spins on its axis once every 24 hours. The side facing the Sun has day, while the side facing away has night.",
+      "source": "National Curriculum Y5"
+    },
+    {
+      "id": "s911_013", "difficulty": 3,
+      "question": "What do the kidneys do?",
+      "answers": ["Pump blood around the body", "Break down food into nutrients", "Filter waste products from the blood to make urine", "Produce digestive enzymes"],
+      "correct": 2,
+      "explanation": "The kidneys filter the blood, removing waste products and excess water to produce urine, which is stored in the bladder.",
+      "source": "National Curriculum Y6"
+    },
+    {
+      "id": "s911_014", "difficulty": 3,
+      "question": "What is an electrical conductor?",
+      "answers": ["A material that does not allow electricity to flow", "A material that stores electrical charge", "A material that allows electricity to flow through it easily", "A material that generates electricity"],
+      "correct": 2,
+      "explanation": "Conductors, such as metals like copper and aluminium, allow electricity to flow freely. This is why wires are made of metal.",
+      "source": "National Curriculum Y6"
+    },
+    {
+      "id": "s911_015", "difficulty": 3,
+      "question": "How long does Earth take to orbit the Sun?",
+      "answers": ["24 hours", "28 days", "365 days", "12 months and 1 week"],
+      "correct": 2,
+      "explanation": "Earth orbits the Sun in approximately 365 days, which is one year. The extra quarter day each year gives us leap years every 4 years.",
+      "source": "National Curriculum Y5"
+    },
+    {
+      "id": "s911_016", "difficulty": 3,
+      "question": "Which gas makes up most of the air we breathe?",
+      "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+      "correct": 2,
+      "explanation": "Nitrogen makes up about 78% of the air. Oxygen makes up about 21%, with the rest being other gases including CO2.",
+      "source": "National Curriculum Y6"
+    },
+    {
+      "id": "s911_017", "difficulty": 3,
+      "question": "What is an adaptation?",
+      "answers": ["When an animal moves to a new habitat", "A feature that helps a living thing survive in its environment", "The process of an animal becoming extinct", "When two species compete for the same food"],
+      "correct": 1,
+      "explanation": "Adaptations are features that help organisms survive. A polar bear's thick white fur is an adaptation to cold, snowy habitats.",
+      "source": "National Curriculum Y6"
+    },
+    {
+      "id": "s911_018", "difficulty": 3,
+      "question": "What is the function of chlorophyll in plants?",
+      "answers": ["It transports water from the roots", "It stores energy as starch", "It absorbs sunlight for photosynthesis", "It attracts insects for pollination"],
+      "correct": 2,
+      "explanation": "Chlorophyll is the green pigment in leaves that absorbs sunlight. This light energy powers the process of photosynthesis.",
+      "source": "National Curriculum Y6"
+    },
+    {
+      "id": "s911_019", "difficulty": 3,
+      "question": "What is the difference between a series and a parallel circuit?",
+      "answers": [
+        "Series uses AC; parallel uses DC",
+        "In series, components share one path; in parallel, components have separate paths",
+        "Series has more components than parallel",
+        "Parallel circuits only work with batteries"
+      ],
+      "correct": 1,
+      "explanation": "In a series circuit all components share one loop. In parallel, each component has its own loop — a break in one branch doesn't stop others.",
+      "source": "National Curriculum Y6"
+    },
+    {
+      "id": "s911_020", "difficulty": 3,
+      "question": "What is the name for the process when a solid changes directly to a gas without becoming liquid first?",
+      "answers": ["Evaporation", "Condensation", "Sublimation", "Melting"],
+      "correct": 2,
+      "explanation": "Sublimation is when a solid changes directly into a gas. Dry ice (solid CO2) sublimates at room temperature.",
+      "source": "National Curriculum Y6"
     }
   ]
 }

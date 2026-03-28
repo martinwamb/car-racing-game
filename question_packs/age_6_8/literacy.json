@@ -41,6 +41,126 @@
       "correct": 3,
       "explanation": "My name is Sam. — The start of a sentence and names (proper nouns) get capital letters.",
       "source": "BBC Bitesize KS1 English"
+    },
+    {
+      "id": "l68_006", "difficulty": 2,
+      "question": "What is a noun?",
+      "answers": ["An action word", "A describing word", "A connecting word", "A person, place or thing"],
+      "correct": 3,
+      "explanation": "A noun names a person (girl), place (city) or thing (car). They are naming words!",
+      "source": "National Curriculum Y2"
+    },
+    {
+      "id": "l68_007", "difficulty": 2,
+      "question": "Which word is spelled correctly?",
+      "answers": ["Frend", "Freind", "Friend", "Friand"],
+      "correct": 2,
+      "explanation": "The correct spelling is 'friend' — remember the rule: i before e (except after c).",
+      "source": "National Curriculum Y3 Spellings"
+    },
+    {
+      "id": "l68_008", "difficulty": 2,
+      "question": "What does the prefix 'un-' mean?",
+      "answers": ["Again", "Before", "Not or opposite", "After"],
+      "correct": 2,
+      "explanation": "The prefix un- means 'not'. Unhappy means not happy, unkind means not kind.",
+      "source": "National Curriculum Y2"
+    },
+    {
+      "id": "l68_009", "difficulty": 2,
+      "question": "Which word describes how something looks, feels, sounds or tastes?",
+      "answers": ["Noun", "Verb", "Adjective", "Pronoun"],
+      "correct": 2,
+      "explanation": "An adjective is a describing word. 'The fast red car' — fast and red are adjectives describing the car.",
+      "source": "National Curriculum Y2"
+    },
+    {
+      "id": "l68_010", "difficulty": 2,
+      "question": "Which of these is a proper noun?",
+      "answers": ["city", "dog", "London", "car"],
+      "correct": 2,
+      "explanation": "London is a proper noun — it is the name of a specific place. Proper nouns always start with a capital letter.",
+      "source": "National Curriculum Y2"
+    },
+    {
+      "id": "l68_011", "difficulty": 2,
+      "question": "Which word is a synonym (similar meaning) for 'happy'?",
+      "answers": ["Sad", "Angry", "Tired", "Cheerful"],
+      "correct": 3,
+      "explanation": "Cheerful means the same as happy. Words with similar meanings are called synonyms.",
+      "source": "National Curriculum Y3"
+    },
+    {
+      "id": "l68_012", "difficulty": 2,
+      "question": "What is the plural of 'box'?",
+      "answers": ["Boxs", "Boxies", "Boxes", "Boxi"],
+      "correct": 2,
+      "explanation": "Words ending in 'x' add '-es' to make the plural. Box becomes boxes.",
+      "source": "National Curriculum Y2"
+    },
+    {
+      "id": "l68_013", "difficulty": 2,
+      "question": "Which sentence is a question?",
+      "answers": ["The dog ran fast.", "Stop that now!", "Where is my car?", "The sky is blue."],
+      "correct": 2,
+      "explanation": "'Where is my car?' is a question because it asks something and ends with a question mark.",
+      "source": "National Curriculum Y2"
+    },
+    {
+      "id": "l68_014", "difficulty": 2,
+      "question": "Which word is an antonym (opposite) of 'fast'?",
+      "answers": ["Quick", "Speedy", "Slow", "Rapid"],
+      "correct": 2,
+      "explanation": "Slow is the opposite of fast. Words with opposite meanings are called antonyms.",
+      "source": "National Curriculum Y3"
+    },
+    {
+      "id": "l68_015", "difficulty": 2,
+      "question": "Which of these words is a conjunction (joining word)?",
+      "answers": ["Run", "Big", "Because", "Car"],
+      "correct": 2,
+      "explanation": "Because is a conjunction — it joins two ideas together. 'I stopped because the light was red.'",
+      "source": "National Curriculum Y2"
+    },
+    {
+      "id": "l68_016", "difficulty": 2,
+      "question": "What does an exclamation mark (!) show?",
+      "answers": ["A quiet sentence", "A question", "A list", "Strong feeling or surprise"],
+      "correct": 3,
+      "explanation": "An exclamation mark shows strong emotion, surprise or excitement. 'Watch out!' or 'That was amazing!'",
+      "source": "National Curriculum Y2"
+    },
+    {
+      "id": "l68_017", "difficulty": 2,
+      "question": "Which word is spelled correctly?",
+      "answers": ["Becaus", "Beacause", "Because", "Becouse"],
+      "correct": 2,
+      "explanation": "The correct spelling is 'because'. It is one of the most common words to learn to spell correctly.",
+      "source": "National Curriculum Y2 Spellings"
+    },
+    {
+      "id": "l68_018", "difficulty": 2,
+      "question": "Which of these words is a pronoun?",
+      "answers": ["Table", "Running", "She", "Quickly"],
+      "correct": 2,
+      "explanation": "She is a pronoun — it stands in place of a person's name. Other pronouns include he, it, they and we.",
+      "source": "National Curriculum Y3"
+    },
+    {
+      "id": "l68_019", "difficulty": 2,
+      "question": "What is the past tense of 'run'?",
+      "answers": ["Runned", "Runed", "Running", "Ran"],
+      "correct": 3,
+      "explanation": "The past tense of run is ran. 'She ran to school this morning.' Some verbs change their spelling in the past tense.",
+      "source": "National Curriculum Y2"
+    },
+    {
+      "id": "l68_020", "difficulty": 2,
+      "question": "Which of these sentences uses a comma correctly?",
+      "answers": ["I like, cars buses and bikes.", "I like cars, buses, and bikes.", "I like cars buses, and, bikes.", "I, like cars buses and bikes."],
+      "correct": 1,
+      "explanation": "Commas separate items in a list. 'I like cars, buses, and bikes' uses commas correctly between the list items.",
+      "source": "National Curriculum Y3"
     }
   ]
 }

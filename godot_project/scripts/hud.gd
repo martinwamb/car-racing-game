@@ -26,10 +26,11 @@ func _ready() -> void:
 	_right_btn.button_up.connect(func(): Input.action_release("turn_right"))
 
 func update_timer(seconds: float) -> void:
-	var m = int(seconds) / 60
-	var s = int(seconds) % 60
+	var clamped = max(0.0, seconds)
+	var m = int(clamped) / 60
+	var s = int(clamped) % 60
 	timer_label.text = "%d:%02d" % [m, s]
-	if seconds <= 10.0:
+	if clamped <= 10.0:
 		timer_label.modulate = Color.RED
 
 func update_lap(current: int, total: int) -> void:

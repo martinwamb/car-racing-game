@@ -61,6 +61,161 @@
       "correct": 1,
       "explanation": "'Shall I com-PARE thee TO a SUM-mer's DAY?' — 10 syllables in 5 pairs (da-DUM), which is iambic pentameter. Shakespeare used it widely.",
       "source": "BBC Bitesize KS3 English"
+    },
+    {
+      "id": "l12_006", "difficulty": 4,
+      "question": "What is a metaphor?",
+      "answers": ["A comparison using 'like' or 'as'", "Saying something is something else directly", "Words that sound like what they mean", "Starting words with the same sound"],
+      "correct": 1,
+      "explanation": "A metaphor directly states one thing is another — e.g. 'The road was a ribbon of tarmac'. Unlike a simile, it does not use 'like' or 'as'.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_007", "difficulty": 4,
+      "question": "What does 'ambiguous' mean?",
+      "answers": ["Absolutely clear", "Very large", "Open to more than one interpretation", "Impossible to understand"],
+      "correct": 2,
+      "explanation": "Ambiguous means something can be understood in more than one way. Writers sometimes use ambiguity intentionally to create layers of meaning.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_008", "difficulty": 4,
+      "question": "Which literary device is used in 'The car roared to life'?",
+      "answers": ["Simile", "Personification", "Alliteration", "Onomatopoeia"],
+      "correct": 1,
+      "explanation": "Giving the car a human quality (roaring to life) is personification. It makes the description more vivid and dynamic.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_009", "difficulty": 4,
+      "question": "What is the subjunctive mood?",
+      "answers": ["A type of noun", "A tense for past events", "A verb form expressing wishes or hypotheticals", "A form of question"],
+      "correct": 2,
+      "explanation": "The subjunctive expresses wishes, doubts or hypotheticals — e.g. 'If I were faster...' or 'I suggest that he be considered.'",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_010", "difficulty": 4,
+      "question": "What is the effect of using short sentences in writing?",
+      "answers": ["Creates confusion", "Adds complexity and length", "Creates tension or emphasis", "Slows the pace down"],
+      "correct": 2,
+      "explanation": "Short sentences create pace, tension and emphasis — used to dramatic effect in action sequences or moments of crisis.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_011", "difficulty": 4,
+      "question": "What is hyperbole?",
+      "answers": ["A mild understatement", "An extreme exaggeration for effect", "A comparison using 'like' or 'as'", "Giving human qualities to an object"],
+      "correct": 1,
+      "explanation": "Hyperbole is deliberate exaggeration for dramatic or comic effect: 'I've told you a million times!' or 'He was moving at the speed of light.'",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_012", "difficulty": 4,
+      "question": "What is the difference between a clause and a phrase?",
+      "answers": [
+        "A clause is always shorter than a phrase",
+        "A clause contains a subject and a verb; a phrase does not",
+        "A phrase contains a verb; a clause does not",
+        "There is no meaningful difference"
+      ],
+      "correct": 1,
+      "explanation": "A clause has both a subject and a verb ('she accelerated'). A phrase lacks a finite verb ('at high speed', 'the red car').",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_013", "difficulty": 4,
+      "question": "What is dramatic irony?",
+      "answers": [
+        "When a character makes a sarcastic remark",
+        "When the audience knows something a character does not",
+        "When two characters argue on stage",
+        "When the ending is unexpected"
+      ],
+      "correct": 1,
+      "explanation": "Dramatic irony occurs when the audience has information a character lacks, creating tension or dark humour. Used often in Shakespeare.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_014", "difficulty": 4,
+      "question": "Which sentence correctly uses a semicolon?",
+      "answers": [
+        "She loved speed; but hated danger.",
+        "The engine roared; the crowd cheered.",
+        "He drove; quickly; around the corner.",
+        "The race; began at dawn."
+      ],
+      "correct": 1,
+      "explanation": "A semicolon joins two independent but related clauses. 'The engine roared; the crowd cheered' — both are complete sentences, closely linked.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_015", "difficulty": 4,
+      "question": "What does the Latin prefix 'trans-' mean?",
+      "answers": ["Against", "Before", "Across or through", "Between"],
+      "correct": 2,
+      "explanation": "'Trans-' means across or through: transport, transmit, transform. Recognising Latin roots helps decode unfamiliar vocabulary.",
+      "source": "National Curriculum KS3 Vocabulary"
+    },
+    {
+      "id": "l12_016", "difficulty": 4,
+      "question": "In persuasive writing, what is a rhetorical question?",
+      "answers": [
+        "A question asked to another character",
+        "A question that expects no answer, used for effect",
+        "A question that introduces new evidence",
+        "A question placed at the end of an essay"
+      ],
+      "correct": 1,
+      "explanation": "A rhetorical question is asked for effect, not to receive an answer: 'Who wouldn't want to drive faster?' It draws the reader in.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_017", "difficulty": 4,
+      "question": "What is the term for the main character in a story?",
+      "answers": ["Antagonist", "Narrator", "Protagonist", "Foil"],
+      "correct": 2,
+      "explanation": "The protagonist is the main character whose journey the story follows. The antagonist is the opposing force or villain.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_018", "difficulty": 4,
+      "question": "Which of the following best describes 'pathetic fallacy'?",
+      "answers": [
+        "When a character feels pity for another",
+        "When weather or setting reflects the mood or emotions of the scene",
+        "When an argument contains a logical error",
+        "When a writer repeats the same idea in different words"
+      ],
+      "correct": 1,
+      "explanation": "Pathetic fallacy is the use of weather or environment to mirror human emotion: a storm before a crisis, sunshine at a joyful reunion.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "l12_019", "difficulty": 4,
+      "question": "What does it mean to analyse a text's 'context'?",
+      "answers": [
+        "To summarise the plot events in order",
+        "To count the number of literary devices used",
+        "To consider the historical, social or biographical circumstances that shaped the writing",
+        "To identify the genre and narrative structure"
+      ],
+      "correct": 2,
+      "explanation": "Context includes when and where a text was written, the author's background, and the society of the time — all of which influence meaning.",
+      "source": "National Curriculum KS3/KS4"
+    },
+    {
+      "id": "l12_020", "difficulty": 4,
+      "question": "What is the AFOREST acronym used for in persuasive writing?",
+      "answers": [
+        "Identifying spelling and grammar errors",
+        "Analysing character development in novels",
+        "Remembering persuasive techniques: Anecdote, Fact, Opinion, Rhetorical question, Emotive language, Statistics, Tricolon",
+        "Structuring essay paragraphs"
+      ],
+      "correct": 2,
+      "explanation": "AFOREST lists key persuasive techniques: Alliteration/Anecdote, Fact, Opinion, Rhetorical question, Emotive language, Statistics, Tricolon (rule of three).",
+      "source": "National Curriculum KS3"
     }
   ]
 }

@@ -13,6 +13,7 @@ extends Node2D
 
 const LAP_COOLDOWN = 6.0   # minimum seconds between lap counts
 var _finish_cooldown: float = LAP_COOLDOWN  # start with cooldown so spawn doesn't count
+var _last_question: Dictionary = {}
 
 func _ready() -> void:
 	QuestionMgr.load_all_packs(AgeProfile.age_group if AgeProfile.age_group != "" else "6-8")
@@ -48,12 +49,15 @@ func _on_question_zone_entered(body: Node, zone: Node2D) -> void:
 		return
 	zone.get_node("CollisionShape2D").disabled = true
 	player_car.freeze()
+	_last_question = question
 	question_popup.show_question(question)
 	track_manager.on_question_zone_entered(question)
 
 func _on_question_answered(correct: bool, coins_earned: int) -> void:
 	if correct and coins_earned > 0:
 		hud.show_coin_popup(coins_earned)
+	elif not correct:
+		QuestionMgr.mark_failed(_last_question)
 
 func _on_popup_continue() -> void:
 	player_car.unfreeze()

@@ -41,6 +41,126 @@
       "correct": 0,
       "explanation": "Multiply coefficients: 4 × 3 = 12. Add exponents (same base): x² × x³ = x⁵. Answer: 12x⁵.",
       "source": "BBC Bitesize KS3 Maths"
+    },
+    {
+      "id": "m12_006", "difficulty": 4,
+      "question": "What is the square root of 144?",
+      "answers": ["11", "12", "13", "14"],
+      "correct": 1,
+      "explanation": "12 × 12 = 144, so the square root of 144 is 12.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_007", "difficulty": 4,
+      "question": "Solve: 3x + 7 = 22",
+      "answers": ["x = 3", "x = 5", "x = 4", "x = 6"],
+      "correct": 1,
+      "explanation": "3x = 22 - 7 = 15, so x = 15 ÷ 3 = 5.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_008", "difficulty": 4,
+      "question": "What is the sum of angles in a triangle?",
+      "answers": ["90°", "270°", "360°", "180°"],
+      "correct": 3,
+      "explanation": "The three interior angles of any triangle always add up to 180 degrees.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_009", "difficulty": 4,
+      "question": "What is 15% of 240?",
+      "answers": ["24", "36", "48", "32"],
+      "correct": 1,
+      "explanation": "10% of 240 = 24. 5% = 12. So 15% = 24 + 12 = 36.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_010", "difficulty": 4,
+      "question": "Expand and simplify: 2(x + 3) + 3(x - 1)",
+      "answers": ["5x + 3", "6x + 3", "5x + 9", "5x - 3"],
+      "correct": 0,
+      "explanation": "2(x + 3) = 2x + 6. 3(x - 1) = 3x - 3. Combined: 2x + 6 + 3x - 3 = 5x + 3.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_011", "difficulty": 4,
+      "question": "A car depreciates in value by 20% per year. If it is worth £12,000 today, what will it be worth in one year?",
+      "answers": ["£2,400", "£10,200", "£9,600", "£11,000"],
+      "correct": 2,
+      "explanation": "20% of £12,000 = £2,400. New value = £12,000 - £2,400 = £9,600.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_012", "difficulty": 4,
+      "question": "What is the volume of a cuboid 4cm × 3cm × 5cm?",
+      "answers": ["47 cm³", "60 cm³", "48 cm³", "72 cm³"],
+      "correct": 1,
+      "explanation": "Volume = length × width × height = 4 × 3 × 5 = 60 cm³.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_013", "difficulty": 4,
+      "question": "If y = 2x² - 3, what is y when x = 4?",
+      "answers": ["26", "29", "32", "35"],
+      "correct": 1,
+      "explanation": "y = 2(4²) - 3 = 2(16) - 3 = 32 - 3 = 29.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_014", "difficulty": 4,
+      "question": "What is the interior angle sum of a hexagon?",
+      "answers": ["540°", "720°", "600°", "660°"],
+      "correct": 1,
+      "explanation": "Interior angle sum = (n - 2) × 180°. For a hexagon (6 sides): (6 - 2) × 180 = 4 × 180 = 720°.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_015", "difficulty": 4,
+      "question": "Factorise: x² + 5x + 6",
+      "answers": ["(x + 1)(x + 6)", "(x + 2)(x + 3)", "(x + 3)(x + 2)", "(x - 2)(x - 3)"],
+      "correct": 1,
+      "explanation": "Find two numbers that multiply to 6 and add to 5: that is 2 and 3. So x² + 5x + 6 = (x + 2)(x + 3).",
+      "source": "National Curriculum KS3/KS4"
+    },
+    {
+      "id": "m12_016", "difficulty": 4,
+      "question": "Two cars start 300km apart and drive towards each other. Car A travels at 80 km/h and Car B at 70 km/h. How long until they meet?",
+      "answers": ["2 hours", "3 hours", "2.5 hours", "4 hours"],
+      "correct": 0,
+      "explanation": "Combined speed = 80 + 70 = 150 km/h. Time = distance ÷ speed = 300 ÷ 150 = 2 hours.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_017", "difficulty": 4,
+      "question": "What is the nth term of the sequence 3, 7, 11, 15, 19...?",
+      "answers": ["3n + 1", "4n - 1", "4n + 1", "3n + 4"],
+      "correct": 1,
+      "explanation": "The common difference is 4, so it is a × 4n sequence. When n=1: 4(1) - 1 = 3. When n=2: 4(2) - 1 = 7. Confirmed: 4n - 1.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_018", "difficulty": 4,
+      "question": "In a right-angled triangle, the two shorter sides are 6cm and 8cm. What is the hypotenuse?",
+      "answers": ["10 cm", "12 cm", "9 cm", "14 cm"],
+      "correct": 0,
+      "explanation": "Using Pythagoras: c² = 6² + 8² = 36 + 64 = 100. So c = √100 = 10 cm.",
+      "source": "National Curriculum KS3"
+    },
+    {
+      "id": "m12_019", "difficulty": 4,
+      "question": "Solve the simultaneous equations: x + y = 10 and x - y = 4",
+      "answers": ["x = 6, y = 4", "x = 7, y = 3", "x = 8, y = 2", "x = 5, y = 5"],
+      "correct": 1,
+      "explanation": "Add the equations: 2x = 14, so x = 7. Substitute: 7 + y = 10, so y = 3. Check: 7 - 3 = 4. Correct!",
+      "source": "National Curriculum KS3/KS4"
+    },
+    {
+      "id": "m12_020", "difficulty": 4,
+      "question": "A race car travels a quarter mile (402m) in 8 seconds. What is its average speed in m/s?",
+      "answers": ["40.2 m/s", "50.25 m/s", "48 m/s", "55 m/s"],
+      "correct": 1,
+      "explanation": "Speed = distance ÷ time = 402 ÷ 8 = 50.25 m/s.",
+      "source": "National Curriculum KS3"
     }
   ]
 }

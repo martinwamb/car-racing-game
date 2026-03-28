@@ -256,6 +256,22 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_t2_n")
 theme_override_styles/hover = SubResource("StyleBoxFlat_t2_h")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_t2_p")
 
+[node name="Play3Btn" type="Button" parent="VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 56)
+text = "🔒  DESERT CIRCUIT (350 coins)"
+disabled = true
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(1.0, 0.90, 0.70, 1)
+
+[node name="Play4Btn" type="Button" parent="VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 56)
+text = "🔒  ARCTIC CIRCUIT (500 coins)"
+disabled = true
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.75, 0.92, 1.0, 1)
+
 [node name="ShopBtn" type="Button" parent="VBox"]
 layout_mode = 2
 custom_minimum_size = Vector2(0, 44)

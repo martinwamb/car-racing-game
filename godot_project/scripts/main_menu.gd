@@ -3,6 +3,8 @@ extends Control
 @onready var age_panel: PanelContainer = $VBox/AgePanel
 @onready var play_btn: Button = $VBox/PlayBtn
 @onready var play2_btn: Button = $VBox/Play2Btn
+@onready var play3_btn: Button = $VBox/Play3Btn
+@onready var play4_btn: Button = $VBox/Play4Btn
 @onready var coins_label: Label = $VBox/Coins
 @onready var change_age_btn: Button = $VBox/ChangeAgeBtn
 
@@ -14,8 +16,7 @@ func _ready() -> void:
 	# If age already set, skip the picker and enable play
 	if AgeProfile.age_group != "":
 		age_panel.hide()
-		play_btn.disabled = false
-		play2_btn.disabled = false
+		_update_track_buttons()
 
 	# Wire age buttons
 	var age_buttons = $VBox/AgePanel/AgeVBox/AgeButtons
@@ -25,20 +26,43 @@ func _ready() -> void:
 	# Wire main buttons
 	play_btn.pressed.connect(_on_play)
 	play2_btn.pressed.connect(_on_play2)
+	play3_btn.pressed.connect(_on_play3)
+	play4_btn.pressed.connect(_on_play4)
 	$VBox/ShopBtn.pressed.connect(_on_shop)
 	change_age_btn.pressed.connect(_show_age_panel)
+
+func _update_track_buttons() -> void:
+	play_btn.disabled = false
+	play2_btn.disabled = false
+	# Track 3 and 4 require purchase
+	play3_btn.disabled = not CoinSystem.owns("track_3")
+	play4_btn.disabled = not CoinSystem.owns("track_4")
+	# Update label to show lock state
+	if not CoinSystem.owns("track_3"):
+		play3_btn.text = "🔒  DESERT CIRCUIT (350 coins)"
+	else:
+		play3_btn.text = "🏜️  DESERT CIRCUIT"
+	if not CoinSystem.owns("track_4"):
+		play4_btn.text = "🔒  ARCTIC CIRCUIT (500 coins)"
+	else:
+		play4_btn.text = "❄️  ARCTIC CIRCUIT"
 
 func _on_age_selected(group: String) -> void:
 	AgeProfile.set_age_group(group)
 	age_panel.hide()
-	play_btn.disabled = false
-	play2_btn.disabled = false
+	_update_track_buttons()
 
 func _on_play() -> void:
 	get_tree().change_scene_to_file("res://scenes/track_1.tscn")
 
 func _on_play2() -> void:
 	get_tree().change_scene_to_file("res://scenes/track_2.tscn")
+
+func _on_play3() -> void:
+	get_tree().change_scene_to_file("res://scenes/track_3.tscn")
+
+func _on_play4() -> void:
+	get_tree().change_scene_to_file("res://scenes/track_4.tscn")
 
 func _on_shop() -> void:
 	get_tree().change_scene_to_file("res://scenes/upgrade_shop.tscn")
@@ -47,3 +71,5 @@ func _show_age_panel() -> void:
 	age_panel.show()
 	play_btn.disabled = true
 	play2_btn.disabled = true
+	play3_btn.disabled = true
+	play4_btn.disabled = true

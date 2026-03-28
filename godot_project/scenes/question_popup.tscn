@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://scripts/question_popup.gd" id="1_qpopup"]
 
 [node name="QuestionPopup" type="CanvasLayer"]
+layer = 2
 script = ExtResource("1_qpopup")
 visible = false
 

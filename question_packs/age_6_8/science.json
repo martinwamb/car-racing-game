@@ -41,6 +41,126 @@
       "correct": 2,
       "explanation": "Gravity pulls everything towards the Earth. That is why things fall down when you drop them!",
       "source": "BBC Bitesize KS1 Science"
+    },
+    {
+      "id": "s68_006", "difficulty": 2,
+      "question": "What do herbivores eat?",
+      "answers": ["Only meat", "Plants and animals", "Only plants", "Only fish"],
+      "correct": 2,
+      "explanation": "Herbivores, such as rabbits and cows, eat only plants. Carnivores eat meat, and omnivores eat both.",
+      "source": "National Curriculum Y3"
+    },
+    {
+      "id": "s68_007", "difficulty": 2,
+      "question": "Which planet do we live on?",
+      "answers": ["Mars", "Jupiter", "Earth", "Venus"],
+      "correct": 2,
+      "explanation": "We live on Earth, the third planet from the Sun. It is the only planet known to have life.",
+      "source": "National Curriculum Y5"
+    },
+    {
+      "id": "s68_008", "difficulty": 2,
+      "question": "What is the boiling point of water?",
+      "answers": ["50°C", "75°C", "100°C", "150°C"],
+      "correct": 2,
+      "explanation": "Water boils at 100 degrees Celsius at sea level. We use this to make tea and cook pasta!",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "s68_009", "difficulty": 2,
+      "question": "Which of these is a solid at room temperature?",
+      "answers": ["Water", "Air", "Wood", "Milk"],
+      "correct": 2,
+      "explanation": "Wood is a solid — it holds its shape. Water and milk are liquids, and air is a gas.",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "s68_010", "difficulty": 2,
+      "question": "What do we call an animal that eats both plants and meat?",
+      "answers": ["Herbivore", "Carnivore", "Omnivore", "Insectivore"],
+      "correct": 2,
+      "explanation": "An omnivore eats both plants and animals. Humans are omnivores, and so are bears and foxes.",
+      "source": "National Curriculum Y3"
+    },
+    {
+      "id": "s68_011", "difficulty": 2,
+      "question": "What gas do humans breathe out?",
+      "answers": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+      "correct": 2,
+      "explanation": "We breathe in oxygen and breathe out carbon dioxide. Plants use the CO2 we breathe out!",
+      "source": "National Curriculum Y3"
+    },
+    {
+      "id": "s68_012", "difficulty": 2,
+      "question": "Which of these is a mammal?",
+      "answers": ["Salmon", "Eagle", "Dolphin", "Frog"],
+      "correct": 2,
+      "explanation": "A dolphin is a mammal — it breathes air, is warm-blooded, and feeds its young with milk. Fish, birds and frogs are not mammals.",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "s68_013", "difficulty": 2,
+      "question": "What is the closest star to Earth?",
+      "answers": ["Polaris", "Sirius", "The Sun", "Betelgeuse"],
+      "correct": 2,
+      "explanation": "The Sun is the closest star to Earth! It is about 150 million kilometres away. Other stars are much, much farther.",
+      "source": "National Curriculum Y5"
+    },
+    {
+      "id": "s68_014", "difficulty": 2,
+      "question": "Which part of the plant soaks up water from the soil?",
+      "answers": ["Leaves", "Flowers", "Roots", "Stem"],
+      "correct": 2,
+      "explanation": "Roots anchor the plant in soil and absorb water and nutrients. The stem then carries water up to the leaves.",
+      "source": "National Curriculum Y3"
+    },
+    {
+      "id": "s68_015", "difficulty": 2,
+      "question": "How many legs does an insect have?",
+      "answers": ["4", "8", "6", "10"],
+      "correct": 2,
+      "explanation": "All insects have exactly 6 legs. Ants, butterflies and beetles are all insects. Spiders have 8 legs and are arachnids, not insects.",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "s68_016", "difficulty": 2,
+      "question": "What type of rock is formed from layers of mud and sand pressed together?",
+      "answers": ["Igneous", "Metamorphic", "Sedimentary", "Granite"],
+      "correct": 2,
+      "explanation": "Sedimentary rock forms when layers of sediment (mud, sand, shells) are pressed together over millions of years. Sandstone is an example.",
+      "source": "National Curriculum Y3"
+    },
+    {
+      "id": "s68_017", "difficulty": 2,
+      "question": "What does a thermometer measure?",
+      "answers": ["Weight", "Length", "Temperature", "Volume"],
+      "correct": 2,
+      "explanation": "A thermometer measures temperature in degrees Celsius. We use them to check the weather and take our temperature when ill.",
+      "source": "National Curriculum Y3"
+    },
+    {
+      "id": "s68_018", "difficulty": 2,
+      "question": "Which of these can a magnet attract?",
+      "answers": ["Plastic", "Wood", "Glass", "Iron"],
+      "correct": 3,
+      "explanation": "Magnets attract materials that contain iron, such as steel paperclips. Plastic, wood and glass are not magnetic.",
+      "source": "National Curriculum Y3"
+    },
+    {
+      "id": "s68_019", "difficulty": 2,
+      "question": "What is the name for the bones that protect your brain?",
+      "answers": ["Ribcage", "Skull", "Spine", "Kneecap"],
+      "correct": 1,
+      "explanation": "The skull is the set of bones that surrounds and protects your brain. It is also called the cranium.",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "s68_020", "difficulty": 2,
+      "question": "What causes shadows to form?",
+      "answers": ["Mirrors reflecting light", "Light being blocked by an object", "Objects absorbing colour", "Water bending light"],
+      "correct": 1,
+      "explanation": "Shadows form when an opaque object blocks light. The shadow appears on the opposite side to the light source.",
+      "source": "National Curriculum Y3"
     }
   ]
 }

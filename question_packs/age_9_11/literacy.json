@@ -56,6 +56,126 @@
       "correct": 1,
       "explanation": "Alliteration is when words near each other start with the same sound. 'Peter Piper picked' — all start with the 'P' sound!",
       "source": "BBC Bitesize KS2 English"
+    },
+    {
+      "id": "l911_006", "difficulty": 3,
+      "question": "What is an adjective?",
+      "answers": ["A word that describes a noun", "A doing word", "A connecting word", "A naming word"],
+      "correct": 0,
+      "explanation": "Adjectives describe nouns — e.g. 'fast car', 'red apple'. They tell us more about what something is like.",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "l911_007", "difficulty": 3,
+      "question": "In the sentence 'She ran quickly', what word class is 'quickly'?",
+      "answers": ["Noun", "Verb", "Adverb", "Adjective"],
+      "correct": 2,
+      "explanation": "Quickly modifies the verb 'ran', so it is an adverb. Adverbs describe how, when or where something happens.",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "l911_008", "difficulty": 3,
+      "question": "What is a simile?",
+      "answers": ["A word with an opposite meaning", "Comparing two things using 'like' or 'as'", "A word that sounds the same as another", "Repeating the same letter sound"],
+      "correct": 1,
+      "explanation": "A simile compares two things using 'like' or 'as' — e.g. 'as fast as lightning' or 'roared like a lion'.",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "l911_009", "difficulty": 3,
+      "question": "Which sentence uses the apostrophe correctly?",
+      "answers": ["The car's engine roared.", "The cars engine roared.", "The car engine's roared.", "The cars' engine roared."],
+      "correct": 0,
+      "explanation": "'The car's engine' uses a possessive apostrophe correctly — the engine belonging to one car.",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "l911_010", "difficulty": 3,
+      "question": "What does the word 'benevolent' mean?",
+      "answers": ["Cruel and harsh", "Well-meaning and kind", "Very mysterious", "Extremely loud"],
+      "correct": 1,
+      "explanation": "Benevolent means kind and generous towards others. It comes from Latin meaning 'good will'.",
+      "source": "National Curriculum Y5 Vocabulary"
+    },
+    {
+      "id": "l911_011", "difficulty": 3,
+      "question": "Which of these is a subordinating conjunction?",
+      "answers": ["And", "But", "Or", "Although"],
+      "correct": 3,
+      "explanation": "Although is a subordinating conjunction — it introduces a subordinate clause. 'Although it was raining, we raced on.' And/But/Or are co-ordinating conjunctions.",
+      "source": "National Curriculum Y5"
+    },
+    {
+      "id": "l911_012", "difficulty": 3,
+      "question": "What is the effect of using onomatopoeia in writing?",
+      "answers": ["It speeds up the plot", "It makes the reader hear the sound being described", "It introduces a new character", "It gives a character human qualities"],
+      "correct": 1,
+      "explanation": "Onomatopoeia uses words that sound like the noise they describe — crash, bang, hiss. It makes writing more vivid and engaging.",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "l911_013", "difficulty": 3,
+      "question": "What is a relative clause?",
+      "answers": ["A clause that describes time", "A clause that adds information about a noun using who, which or that", "A clause written in the past tense", "A clause at the start of a sentence"],
+      "correct": 1,
+      "explanation": "A relative clause adds more information about a noun: 'The driver, who won last year, crossed the finish line.'",
+      "source": "National Curriculum Y5"
+    },
+    {
+      "id": "l911_014", "difficulty": 3,
+      "question": "Which of these is a homophone pair?",
+      "answers": ["Car and bus", "There and their", "Fast and slow", "Big and large"],
+      "correct": 1,
+      "explanation": "Homophones sound the same but have different spellings and meanings. There/their/they're all sound alike.",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "l911_015", "difficulty": 3,
+      "question": "In formal writing, which phrase is most appropriate?",
+      "answers": ["We wanna go faster.", "We are going to go faster.", "We gonna speed up.", "We're well up for going faster."],
+      "correct": 1,
+      "explanation": "Formal writing avoids contractions and slang. 'We are going to go faster' is correct, clear and formal.",
+      "source": "National Curriculum Y5"
+    },
+    {
+      "id": "l911_016", "difficulty": 3,
+      "question": "What is the purpose of a colon (:) in a sentence?",
+      "answers": ["To join two nouns", "To end a question", "To introduce a list or explanation", "To show a character is speaking"],
+      "correct": 2,
+      "explanation": "A colon introduces a list or an explanation: e.g. 'He needed three things: speed, skill and focus.'",
+      "source": "National Curriculum Y5"
+    },
+    {
+      "id": "l911_017", "difficulty": 3,
+      "question": "Which word is the odd one out: sprint, dash, jog, boulder?",
+      "answers": ["Sprint", "Dash", "Jog", "Boulder"],
+      "correct": 3,
+      "explanation": "Sprint, dash and jog are all verbs describing ways of moving. Boulder is a noun (a large rock).",
+      "source": "National Curriculum Y4"
+    },
+    {
+      "id": "l911_018", "difficulty": 3,
+      "question": "What does 'persuasive writing' try to do?",
+      "answers": ["Retell a story from memory", "Describe a scene in detail", "Convince the reader to agree with a viewpoint", "Explain how something works step by step"],
+      "correct": 2,
+      "explanation": "Persuasive writing uses arguments, evidence and rhetorical techniques to convince the reader. Adverts and speeches are examples.",
+      "source": "National Curriculum Y5"
+    },
+    {
+      "id": "l911_019", "difficulty": 3,
+      "question": "What is the difference between active and passive voice?",
+      "answers": ["Active uses adjectives; passive uses adverbs", "In active voice the subject does the action; in passive the subject receives it", "Active is past tense; passive is present tense", "There is no difference"],
+      "correct": 1,
+      "explanation": "Active: 'The driver won the race.' Passive: 'The race was won by the driver.' The subject and object swap roles.",
+      "source": "National Curriculum Y6"
+    },
+    {
+      "id": "l911_020", "difficulty": 3,
+      "question": "Which of these words contains a silent letter?",
+      "answers": ["Sprint", "Brake", "Quick", "Speed"],
+      "correct": 1,
+      "explanation": "In 'brake', the 'e' is silent — it makes the 'a' say its name (a long vowel sound). The word is pronounced 'brayk'.",
+      "source": "National Curriculum Y5 Spellings"
     }
   ]
 }

@@ -4,12 +4,14 @@ signal coins_changed(new_total: int)
 signal upgrade_purchased(upgrade_id: String)
 
 const UPGRADES = {
-	"engine_1":  {"name": "Engine Upgrade",   "cost": 100, "description": "Faster top speed"},
-	"tires_1":   {"name": "Better Tires",     "cost":  80, "description": "Tighter cornering"},
-	"skin_1":    {"name": "Red Car",          "cost":  50, "description": "New car colour"},
-	"skin_2":    {"name": "Blue Car",         "cost":  50, "description": "New car colour"},
-	"track_2":   {"name": "Desert Track",     "cost": 200, "description": "Unlock a new track"},
-	"time_ext":  {"name": "+30s Race Time",   "cost":  30, "description": "Extend current race"},
+	"engine_1":  {"name": "Engine Upgrade",     "cost": 100, "description": "Faster top speed"},
+	"tires_1":   {"name": "Better Tires",       "cost":  80, "description": "Tighter cornering"},
+	"skin_1":    {"name": "Red Car",            "cost":  50, "description": "New car colour"},
+	"skin_2":    {"name": "Blue Car",           "cost":  50, "description": "New car colour"},
+	"track_2":   {"name": "City Night Circuit", "cost": 200, "description": "Unlock Track 2"},
+	"track_3":   {"name": "Desert Circuit",     "cost": 350, "description": "Unlock Track 3"},
+	"track_4":   {"name": "Arctic Circuit",     "cost": 500, "description": "Unlock Track 4"},
+	"time_ext":  {"name": "+30s Race Time",     "cost":  30, "description": "Extend current race"},
 }
 
 var _owned_upgrades: Array = []
