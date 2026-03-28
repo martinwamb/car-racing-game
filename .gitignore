@@ -1,7 +1,11 @@
 # Godot
 godot_project/.godot/
-godot_project/*.import
+godot_project/**/*.import
 godot_project/*.keystore
+godot_project/android/
+
+# Claude memory
+.claude/
 
 # Build output
 build/

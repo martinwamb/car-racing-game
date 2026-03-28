@@ -31,6 +31,9 @@ jobs:
       - name: Copy question packs into build
         run: cp -r question_packs build/
 
+      - name: Copy static files into web build
+        run: cp -r static/. build/web/
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
