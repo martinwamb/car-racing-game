@@ -5,7 +5,7 @@ extends CharacterBody2D
 @export var max_speed: float = 300.0
 @export var acceleration: float = 400.0
 @export var friction: float = 500.0
-@export var turn_speed: float = 180.0  # degrees per second
+@export var turn_speed: float = 240.0  # degrees per second
 
 var _speed: float = 0.0
 var _is_frozen: bool = false  # true during question popup

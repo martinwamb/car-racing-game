@@ -1,4 +1,28 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=4 format=3]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wheel"]
+bg_color = Color(0.12, 0.12, 0.20, 0.72)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.55, 0.55, 0.85, 0.85)
+corner_radius_top_left = 80
+corner_radius_top_right = 80
+corner_radius_bottom_right = 80
+corner_radius_bottom_left = 80
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wheel_active"]
+bg_color = Color(0.22, 0.22, 0.40, 0.88)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.75, 0.75, 1.0, 1.0)
+corner_radius_top_left = 80
+corner_radius_top_right = 80
+corner_radius_bottom_right = 80
+corner_radius_bottom_left = 80
 
 [ext_resource type="Script" path="res://scripts/hud.gd" id="1_hud"]
 
@@ -73,32 +97,27 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 
-; LEFT SIDE — steering buttons
-[node name="TurnLeftBtn" type="Button" parent="TouchControls"]
+; LEFT SIDE — steering wheel (drag left/right to steer)
+[node name="SteeringWheel" type="Panel" parent="TouchControls"]
 anchor_left = 0.0
 anchor_top = 1.0
 anchor_right = 0.0
 anchor_bottom = 1.0
-offset_left = 20.0
-offset_top = -130.0
-offset_right = 130.0
-offset_bottom = -20.0
-text = "◄"
-modulate = Color(1, 1, 1, 0.65)
-theme_override_font_sizes/font_size = 36
+offset_left = 10.0
+offset_top = -175.0
+offset_right = 175.0
+offset_bottom = -10.0
+modulate = Color(1, 1, 1, 0.72)
+theme_override_styles/panel = SubResource("StyleBoxFlat_wheel")
 
-[node name="TurnRightBtn" type="Button" parent="TouchControls"]
-anchor_left = 0.0
-anchor_top = 1.0
-anchor_right = 0.0
+[node name="SteerLabel" type="Label" parent="TouchControls/SteeringWheel"]
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 150.0
-offset_top = -130.0
-offset_right = 260.0
-offset_bottom = -20.0
-text = "►"
-modulate = Color(1, 1, 1, 0.65)
-theme_override_font_sizes/font_size = 36
+text = "◄  STEER  ►"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 20
 
 ; RIGHT SIDE — accelerate / brake buttons
 [node name="AccelBtn" type="Button" parent="TouchControls"]
@@ -106,23 +125,23 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -130.0
-offset_top = -130.0
-offset_right = -20.0
-offset_bottom = -20.0
-text = "▲"
-modulate = Color(0.4, 1, 0.4, 0.65)
-theme_override_font_sizes/font_size = 36
+offset_left = -140.0
+offset_top = -175.0
+offset_right = -10.0
+offset_bottom = -10.0
+text = "GAS ▲"
+modulate = Color(0.4, 1, 0.4, 0.75)
+theme_override_font_sizes/font_size = 24
 
 [node name="BrakeBtn" type="Button" parent="TouchControls"]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -260.0
-offset_top = -130.0
+offset_left = -290.0
+offset_top = -175.0
 offset_right = -150.0
-offset_bottom = -20.0
-text = "▼"
-modulate = Color(1, 0.5, 0.4, 0.65)
-theme_override_font_sizes/font_size = 36
+offset_bottom = -10.0
+text = "▼ BRAKE"
+modulate = Color(1, 0.5, 0.4, 0.75)
+theme_override_font_sizes/font_size = 24

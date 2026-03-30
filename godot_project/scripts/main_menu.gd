@@ -7,6 +7,7 @@ extends Control
 @onready var play4_btn: Button = $VBox/Play4Btn
 @onready var coins_label: Label = $VBox/Coins
 @onready var change_age_btn: Button = $VBox/ChangeAgeBtn
+@onready var tips_panel: PanelContainer = $TipsPanel
 
 const AGE_GROUPS = ["3-5", "6-8", "9-11", "12+"]
 
@@ -17,6 +18,10 @@ func _ready() -> void:
 	if AgeProfile.age_group != "":
 		age_panel.hide()
 		_update_track_buttons()
+
+	# Show tips on first launch
+	if not _is_tutorial_shown():
+		tips_panel.show()
 
 	# Wire age buttons
 	var age_buttons = $VBox/AgePanel/AgeVBox/AgeButtons
@@ -30,14 +35,35 @@ func _ready() -> void:
 	play4_btn.pressed.connect(_on_play4)
 	$VBox/ShopBtn.pressed.connect(_on_shop)
 	change_age_btn.pressed.connect(_show_age_panel)
+	$TipsPanel/TipsVBox/GotItBtn.pressed.connect(_on_tips_close)
+
+func _is_tutorial_shown() -> bool:
+	var cfg = ConfigFile.new()
+	if cfg.load("user://profile.cfg") != OK:
+		return false
+	return cfg.get_value("tutorial", "shown", false)
+
+func _mark_tutorial_shown() -> void:
+	var cfg = ConfigFile.new()
+	cfg.load("user://profile.cfg")
+	cfg.set_value("tutorial", "shown", true)
+	cfg.save("user://profile.cfg")
+
+func _on_tips_close() -> void:
+	_mark_tutorial_shown()
+	tips_panel.hide()
 
 func _update_track_buttons() -> void:
 	play_btn.disabled = false
-	play2_btn.disabled = false
-	# Track 3 and 4 require purchase
+	# Track 2, 3 and 4 require purchase
+	play2_btn.disabled = not CoinSystem.owns("track_2")
 	play3_btn.disabled = not CoinSystem.owns("track_3")
 	play4_btn.disabled = not CoinSystem.owns("track_4")
-	# Update label to show lock state
+	# Update labels to show lock state
+	if not CoinSystem.owns("track_2"):
+		play2_btn.text = "🔒  CITY CIRCUIT (200 coins)"
+	else:
+		play2_btn.text = "🌆  TRACK 2: CITY CIRCUIT"
 	if not CoinSystem.owns("track_3"):
 		play3_btn.text = "🔒  DESERT CIRCUIT (350 coins)"
 	else:

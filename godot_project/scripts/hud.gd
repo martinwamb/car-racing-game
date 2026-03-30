@@ -6,24 +6,67 @@ extends CanvasLayer
 @onready var coin_popup: Label = $CoinPopup
 @onready var _accel_btn: Button = $TouchControls/AccelBtn
 @onready var _brake_btn: Button = $TouchControls/BrakeBtn
-@onready var _left_btn: Button = $TouchControls/TurnLeftBtn
-@onready var _right_btn: Button = $TouchControls/TurnRightBtn
+@onready var _wheel: Panel = $TouchControls/SteeringWheel
+@onready var _steer_label: Label = $TouchControls/SteeringWheel/SteerLabel
 
 var _popup_tween: Tween
+
+# Steering wheel state
+var _wheel_touch_id: int = -1
+var _wheel_start_x: float = 0.0
 
 func _ready() -> void:
 	coins_label.text = str(AgeProfile.total_coins)
 	CoinSystem.coins_changed.connect(_on_coins_changed)
 
-	# Wire touch buttons → Input action press/release so car_controller.gd needs no changes
+	# Wire accelerate / brake buttons
 	_accel_btn.button_down.connect(func(): Input.action_press("accelerate"))
 	_accel_btn.button_up.connect(func(): Input.action_release("accelerate"))
 	_brake_btn.button_down.connect(func(): Input.action_press("brake"))
 	_brake_btn.button_up.connect(func(): Input.action_release("brake"))
-	_left_btn.button_down.connect(func(): Input.action_press("turn_left"))
-	_left_btn.button_up.connect(func(): Input.action_release("turn_left"))
-	_right_btn.button_down.connect(func(): Input.action_press("turn_right"))
-	_right_btn.button_up.connect(func(): Input.action_release("turn_right"))
+
+	# Wire steering wheel drag input
+	_wheel.gui_input.connect(_on_wheel_input)
+
+func _on_wheel_input(event: InputEvent) -> void:
+	if event is InputEventScreenTouch:
+		if event.pressed:
+			_wheel_touch_id = event.index
+			_wheel_start_x = event.position.x
+		elif event.index == _wheel_touch_id:
+			_release_steer()
+	elif event is InputEventScreenDrag:
+		if event.index == _wheel_touch_id:
+			_apply_steer(event.position.x - _wheel_start_x)
+	elif event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			if event.pressed:
+				_wheel_touch_id = 0
+				_wheel_start_x = event.position.x
+			else:
+				_release_steer()
+	elif event is InputEventMouseMotion and _wheel_touch_id == 0:
+		_apply_steer(event.position.x - _wheel_start_x)
+
+func _apply_steer(delta_x: float) -> void:
+	if delta_x < -20:
+		Input.action_press("turn_left")
+		Input.action_release("turn_right")
+		_steer_label.text = "◄◄  STEERING"
+	elif delta_x > 20:
+		Input.action_press("turn_right")
+		Input.action_release("turn_left")
+		_steer_label.text = "STEERING  ►►"
+	else:
+		Input.action_release("turn_left")
+		Input.action_release("turn_right")
+		_steer_label.text = "◄  STEER  ►"
+
+func _release_steer() -> void:
+	_wheel_touch_id = -1
+	Input.action_release("turn_left")
+	Input.action_release("turn_right")
+	_steer_label.text = "◄  STEER  ►"
 
 func update_timer(seconds: float) -> void:
 	var clamped = max(0.0, seconds)

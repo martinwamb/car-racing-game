@@ -248,7 +248,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_play_p")
 [node name="Play2Btn" type="Button" parent="VBox"]
 layout_mode = 2
 custom_minimum_size = Vector2(0, 64)
-text = "🌆  TRACK 2: CITY CIRCUIT"
+text = "🔒  CITY CIRCUIT (200 coins)"
 disabled = true
 theme_override_font_sizes/font_size = 22
 theme_override_colors/font_color = Color(0.85, 0.93, 1, 1)
@@ -285,3 +285,38 @@ layout_mode = 2
 custom_minimum_size = Vector2(0, 36)
 text = "Change Age Group"
 theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
+
+; ── First-launch tips overlay ─────────────────────────────────────────────────
+[node name="TipsPanel" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+visible = false
+
+[node name="TipsVBox" type="VBoxContainer" parent="TipsPanel"]
+layout_mode = 2
+alignment = 1
+
+[node name="TipsTitle" type="Label" parent="TipsPanel/TipsVBox"]
+layout_mode = 2
+text = "Welcome to Rev & Learn!"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(1.0, 0.85, 0.0, 1)
+theme_override_font_sizes/font_size = 28
+
+[node name="TipsList" type="Label" parent="TipsPanel/TipsVBox"]
+layout_mode = 2
+text = "🏎️  Drag the STEER wheel left or right to turn your car
+⛽  Use the GAS and BRAKE buttons on the right side
+⭐  Drive over yellow markers to answer questions and earn coins
+🪙  Earn coins to unlock new tracks in the Upgrade Shop
+🏁  Complete all laps before the timer runs out!"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+
+[node name="GotItBtn" type="Button" parent="TipsPanel/TipsVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 56)
+text = "Got it — Let's Race! 🏁"
+theme_override_font_sizes/font_size = 22
