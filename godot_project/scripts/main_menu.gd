@@ -19,8 +19,8 @@ func _ready() -> void:
 		age_panel.hide()
 		_update_track_buttons()
 
-	# Show tips on first launch
-	if not _is_tutorial_shown():
+	# Show tips only to brand new users (not returning users who updated)
+	if AgeProfile.age_group == "" and not _is_tutorial_shown():
 		tips_panel.show()
 
 	# Wire age buttons
