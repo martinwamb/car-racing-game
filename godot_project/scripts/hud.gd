@@ -8,6 +8,7 @@ extends CanvasLayer
 @onready var _brake_btn: Button = $TouchControls/BrakeBtn
 @onready var _wheel: Panel = $TouchControls/SteeringWheel
 @onready var _steer_label: Label = $TouchControls/SteeringWheel/SteerLabel
+@onready var _menu_btn: Button = $MenuBtn
 
 var _popup_tween: Tween
 
@@ -27,6 +28,12 @@ func _ready() -> void:
 
 	# Wire steering wheel drag input
 	_wheel.gui_input.connect(_on_wheel_input)
+
+	# Wire back button
+	_menu_btn.pressed.connect(_on_menu_pressed)
+
+func _on_menu_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 
 func _on_wheel_input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:

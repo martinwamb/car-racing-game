@@ -91,6 +91,18 @@ horizontal_alignment = 1
 add_theme_font_size_override = "font_size"
 theme_override_font_sizes/font_size = 20
 
+; ── Back to menu button ───────────────────────────────────────────────────────
+[node name="MenuBtn" type="Button" parent="."]
+anchor_top = 0.0
+anchor_bottom = 0.0
+offset_left = 8.0
+offset_top = 64.0
+offset_right = 100.0
+offset_bottom = 100.0
+text = "← Menu"
+modulate = Color(1, 1, 1, 0.7)
+theme_override_font_sizes/font_size = 16
+
 ; ── On-screen touch controls (also usable on desktop, keyboard still works) ──
 [node name="TouchControls" type="Control" parent="."]
 anchor_right = 1.0
