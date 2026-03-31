@@ -101,5 +101,5 @@ func _show_age_panel() -> void:
 	play4_btn.disabled = true
 
 func _notification(what: int) -> void:
-	if what == NOTIFICATION_WM_GO_BACK:
+	if what == NOTIFICATION_WM_GO_BACK_REQUEST:
 		get_tree().quit()

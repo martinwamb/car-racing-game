@@ -66,5 +66,5 @@ func _input(event: InputEvent) -> void:
 			_go_to_menu()
 
 func _notification(what: int) -> void:
-	if what == NOTIFICATION_WM_GO_BACK:
+	if what == NOTIFICATION_WM_GO_BACK_REQUEST:
 		_go_to_menu()
