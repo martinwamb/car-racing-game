@@ -46,3 +46,7 @@ func _on_buy(upgrade_id: String) -> void:
 	if CoinSystem.purchase(upgrade_id):
 		_refresh_coins()
 		_build_item_list()
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_GO_BACK:
+		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")

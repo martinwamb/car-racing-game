@@ -63,7 +63,7 @@ func _update_track_buttons() -> void:
 	if not CoinSystem.owns("track_2"):
 		play2_btn.text = "🔒  CITY CIRCUIT (200 coins)"
 	else:
-		play2_btn.text = "🌆  TRACK 2: CITY CIRCUIT"
+		play2_btn.text = "🌆  CITY CIRCUIT"
 	if not CoinSystem.owns("track_3"):
 		play3_btn.text = "🔒  DESERT CIRCUIT (350 coins)"
 	else:
@@ -99,3 +99,7 @@ func _show_age_panel() -> void:
 	play2_btn.disabled = true
 	play3_btn.disabled = true
 	play4_btn.disabled = true
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_GO_BACK:
+		get_tree().quit()

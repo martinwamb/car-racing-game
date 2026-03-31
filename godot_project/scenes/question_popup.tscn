@@ -33,7 +33,10 @@ layout_mode = 2
 text = "QUESTION TIME!"
 horizontal_alignment = 1
 add_theme_font_size_override = "font_size"
-theme_override_font_sizes/font_size = 22
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(1.0, 0.85, 0.0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
 
 [node name="QuestionLabel" type="Label" parent="Panel/VBox"]
 layout_mode = 2
@@ -43,7 +46,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 add_theme_font_size_override = "font_size"
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.6)
+theme_override_constants/outline_size = 2
 
 [node name="Answers" type="GridContainer" parent="Panel/VBox"]
 layout_mode = 2
@@ -76,6 +81,9 @@ text = ""
 horizontal_alignment = 1
 autowrap_mode = 3
 visible = false
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.5)
+theme_override_constants/outline_size = 2
 
 [node name="CoinLabel" type="Label" parent="Panel/VBox"]
 layout_mode = 2
@@ -90,3 +98,5 @@ layout_mode = 2
 custom_minimum_size = Vector2(0, 44)
 text = "Keep Racing! ▶"
 visible = false
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1, 1, 1, 1)

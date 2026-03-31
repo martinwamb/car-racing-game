@@ -64,3 +64,7 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventKey or event is InputEventMouseButton:
 		if event.is_pressed():
 			_go_to_menu()
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_GO_BACK:
+		_go_to_menu()

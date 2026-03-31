@@ -79,3 +79,7 @@ func _on_race_finished(_position: int) -> void:
 	player_car.freeze()
 	await get_tree().create_timer(2.0).timeout
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_GO_BACK:
+		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")

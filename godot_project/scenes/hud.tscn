@@ -46,6 +46,8 @@ size_flags_horizontal = 3
 text = "🪙"
 add_theme_font_size_override = "font_size"
 theme_override_font_sizes/font_size = 24
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
 
 [node name="CoinsLabel" type="Label" parent="TopBar/HBoxContainer"]
 layout_mode = 2
@@ -53,6 +55,8 @@ size_flags_horizontal = 3
 text = "0"
 add_theme_font_size_override = "font_size"
 theme_override_font_sizes/font_size = 22
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
 
 [node name="Spacer" type="Control" parent="TopBar/HBoxContainer"]
 layout_mode = 2
@@ -64,6 +68,8 @@ size_flags_horizontal = 3
 text = "2:00"
 add_theme_font_size_override = "font_size"
 theme_override_font_sizes/font_size = 22
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
 
 [node name="Spacer2" type="Control" parent="TopBar/HBoxContainer"]
 layout_mode = 2
@@ -75,6 +81,8 @@ size_flags_horizontal = 3
 text = "Lap 0/3"
 add_theme_font_size_override = "font_size"
 theme_override_font_sizes/font_size = 22
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
 
 ; Coin pop animation — floats up and fades when coins are earned
 [node name="CoinPopup" type="Label" parent="."]
@@ -97,11 +105,11 @@ anchor_top = 0.0
 anchor_bottom = 0.0
 offset_left = 8.0
 offset_top = 64.0
-offset_right = 100.0
-offset_bottom = 100.0
+offset_right = 110.0
+offset_bottom = 102.0
 text = "← Menu"
-modulate = Color(1, 1, 1, 0.7)
-theme_override_font_sizes/font_size = 16
+modulate = Color(1, 1, 1, 0.88)
+theme_override_font_sizes/font_size = 18
 
 ; ── On-screen touch controls (also usable on desktop, keyboard still works) ──
 [node name="TouchControls" type="Control" parent="."]
@@ -116,9 +124,9 @@ anchor_top = 1.0
 anchor_right = 0.0
 anchor_bottom = 1.0
 offset_left = 10.0
-offset_top = -175.0
+offset_top = -215.0
 offset_right = 175.0
-offset_bottom = -10.0
+offset_bottom = -50.0
 modulate = Color(1, 1, 1, 0.72)
 theme_override_styles/panel = SubResource("StyleBoxFlat_wheel")
 
@@ -138,9 +146,9 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -140.0
-offset_top = -175.0
+offset_top = -215.0
 offset_right = -10.0
-offset_bottom = -10.0
+offset_bottom = -50.0
 text = "GAS ▲"
 modulate = Color(0.4, 1, 0.4, 0.75)
 theme_override_font_sizes/font_size = 24
@@ -151,9 +159,9 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -290.0
-offset_top = -175.0
+offset_top = -215.0
 offset_right = -150.0
-offset_bottom = -10.0
+offset_bottom = -50.0
 text = "▼ BRAKE"
 modulate = Color(1, 0.5, 0.4, 0.75)
 theme_override_font_sizes/font_size = 24
