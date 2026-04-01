@@ -1,7 +1,7 @@
 extends Control
 
 @onready var coins_label: Label = $VBox/CoinsLabel
-@onready var item_list: VBoxContainer = $VBox/ItemList
+@onready var item_list: VBoxContainer = $VBox/ScrollContainer/ItemList
 
 func _ready() -> void:
 	_refresh_coins()

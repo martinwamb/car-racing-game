@@ -14,21 +14,20 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color(0.102, 0.102, 0.18, 1)
 
+; Full-screen VBox with safe margins
 [node name="VBox" type="VBoxContainer" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -300.0
-offset_top = -300.0
-offset_right = 300.0
-offset_bottom = 300.0
-theme_override_constants/separation = 12
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+theme_override_constants/separation = 10
 
 [node name="BackBtn" type="Button" parent="VBox"]
 layout_mode = 2
-custom_minimum_size = Vector2(0, 44)
+custom_minimum_size = Vector2(0, 48)
 text = "← Back to Menu"
 theme_override_font_sizes/font_size = 18
 
@@ -37,7 +36,7 @@ layout_mode = 2
 text = "Upgrade Shop"
 horizontal_alignment = 1
 add_theme_font_size_override = "font_size"
-theme_override_font_sizes/font_size = 36
+theme_override_font_sizes/font_size = 32
 theme_override_colors/font_color = Color(1.0, 0.85, 0.0, 1)
 
 [node name="CoinsLabel" type="Label" parent="VBox"]
@@ -47,8 +46,14 @@ horizontal_alignment = 1
 add_theme_font_size_override = "font_size"
 theme_override_font_sizes/font_size = 20
 
-[node name="ItemList" type="VBoxContainer" parent="VBox"]
+; ScrollContainer so item list is scrollable on all screen sizes
+[node name="ScrollContainer" type="ScrollContainer" parent="VBox"]
 layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ItemList" type="VBoxContainer" parent="VBox/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 theme_override_constants/separation = 8
 
 ; Items are generated at runtime by upgrade_shop.gd
