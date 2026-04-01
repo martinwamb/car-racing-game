@@ -14,10 +14,12 @@ const AGE_GROUPS = ["3-5", "6-8", "9-11", "12+"]
 func _ready() -> void:
 	coins_label.text = "🪙 %d coins" % AgeProfile.total_coins
 
-	# If age already set, skip the picker and enable play
+	# Always unlock track buttons so PlayBtn is never stuck disabled
+	_update_track_buttons()
+
+	# If age already set, skip the picker
 	if AgeProfile.age_group != "":
 		age_panel.hide()
-		_update_track_buttons()
 
 	# Show tips only to brand new users (not returning users who updated)
 	if AgeProfile.age_group == "" and not _is_tutorial_shown():
