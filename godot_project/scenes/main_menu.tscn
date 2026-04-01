@@ -237,17 +237,15 @@ texture = ExtResource("3_carblue")
 flip_h = true
 stretch_mode = 0
 
-; ── Main content (centered VBox) ─────────────────────────────────────────────
+; ── Main content (full-screen VBox with safe margins) ────────────────────────
 [node name="VBox" type="VBoxContainer" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -220.0
-offset_top = -280.0
-offset_right = 220.0
-offset_bottom = 280.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
 theme_override_constants/separation = 14
 
 [node name="Title" type="Label" parent="VBox"]
@@ -364,9 +362,9 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_shop_h")
 
 [node name="ChangeAgeBtn" type="Button" parent="VBox"]
 layout_mode = 2
-custom_minimum_size = Vector2(0, 36)
+custom_minimum_size = Vector2(0, 48)
 text = "Change Age Group"
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 18
 theme_override_colors/font_color = Color(0.75, 0.75, 0.75, 1)
 
 ; ── First-launch tips overlay ─────────────────────────────────────────────────
