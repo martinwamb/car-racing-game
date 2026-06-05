@@ -1,4 +1,3 @@
-```gdscript
 # 
 extends Node
 
@@ -18,8 +17,7 @@ func _input(event):
                 if get_node("Car"): 
                     get_node("Car").go_right()
 
-# File: src/input/BackButtonInput.gd
-
+# 
 extends Node
 
 func _ready():
@@ -29,6 +27,3 @@ func _unhandled_input(event):
     if event is InputEventAction and event.action == "ui_back":
         if Application.is_running():
             quit()
-```
-
-FILE: src/input/AndroidTouchInput.gd
