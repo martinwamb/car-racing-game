@@ -1,0 +1,51 @@
+```gdscript
+# 
+extends Node2D
+
+func _ready():
+    if get_parent().name == "TrackLayout1":
+        # Logic for Track Layout 1
+        pass
+    elif get_parent().name == "TrackLayout2":
+        # Logic for Track Layout 2
+        pass
+    else:
+        print("Unknown track layout")
+
+# File: src/game_mechanics.gd
+
+extends Node2D
+
+var player_speed = 0.5
+var gravity = -9.81
+
+func _ready():
+    Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+func _process(delta):
+    var input = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+    if input != 0:
+        player_speed += input * 2
+    else:
+        player_speed *= 0.98
+    
+    var velocity = Vector2(0, player_speed) + gravity * delta
+    position += velocity
+
+# File: src/main.tscn
+
+extends Node2D
+
+onready var track_layouts = $TrackLayouts/TrackLayout1
+onready var game_mechanics_node = $GameMechanicsNode
+
+func _ready():
+    # Load and set the initial track layout
+    current_track_layout = get_node(track_layouts.name)
+    add_child(current_track_layout)
+
+    # Start game mechanics
+    add_child(game_mechanics_node)
+```
+
+FILE: src/track_layouts.tscn
